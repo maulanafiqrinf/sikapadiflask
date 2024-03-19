@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="Aplikasi Deteksi Penyakit Tanaman Padi" />
+    <meta name="keywords" content="Sikapadi,Klasifikasi,Tanaman Padi" />
+    <meta name="author" content="Maulana Fiqri" />
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <link rel="pingback" href="xmlrpc.html" />
+    <title>SIKAPADI</title>
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="generator" content="Elementor 3.16.4" />
+    <link rel="apple-touch-icon" href="../static/assets/images/logo/logodoang (1).png">
+
+    <link rel="stylesheet" id="jkit-elements-main-css"
+        href="static/assets/plugin/jeg-elementor-kit/assets/css/elements/main61da.css" media="all" />
+    <link rel="stylesheet" id="classic-theme-styles-css" href="static/assets/css/classic-themes.min68b3.css"
+        media="all" />
+    <link rel="stylesheet" id="elementor-frontend-css"
+        href="static/assets/plugin/elementor/assets/css/frontend-lite.minafc7.css" media="all" />
+    <link rel="stylesheet" id="elementor-post-3-css" href="static/assets/css/post-3c65a.css" media="all" />
+    <link rel="stylesheet" id="elementor-global-css" href="static/assets/css/global7b83.css" media="all" />
+    <link rel="stylesheet" id="elementor-post-1056-css" href="static/assets/css/post-1273ca94.css" media="all" />
+    <link rel="stylesheet" id="hello-elementor-css" href="static/assets/dist/themes/hello-elementor/style.minc141.css"
+        media="all" />
+    <link rel="stylesheet" id="hello-elementor-theme-style-css"
+        href="static/assets/dist/themes/hello-elementor/theme.minc141.css" media="all" />
+    <link rel="stylesheet" id="google-fonts-1-css"
+        href="https://fonts.googleapis.com/css?family=Krona+One%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMandali%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.1.4"
+        media="all" />
+    <link rel="stylesheet" id="elementor-icons-jkiticon-css"
+        href="static/assets/plugin/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon61da.css" media="all" />
+    <script src="static/assets/js/jquery/jquery.mina7a0.js" id="jquery-core-js"></script>
+    <script src="static/assets//js/jquery/jquery-migrate.mind617.js" id="jquery-migrate-js"></script>
+    <script src="static/assets/plugin/allow-webp-image/public/js/allow-webp-image-publicf269.js"
+        id="allow-webp-image-js"></script>
+    <script src="static/assets/plugin/template-kit-export/public/assets/js/template-kit-export-public.min365c.js"
+        id="template-kit-export-js"></script>
+</head>
+
+<body
+    class="page-template page-template-elementor_header_footer page page-id-1273 jkit-color-scheme elementor-default elementor-template-full-width elementor-kit-3 elementor-page elementor-page-1273">
+    <div id="page" class="jkit-template site">
+        {% include 'main/navbar.html' %}
+        <div data-elementor-type="wp-page" data-elementor-id="1273" class="elementor elementor-1273">
+            <div class="elementor-element elementor-element-d9dd0f6 e-con-full e-flex e-con e-parent" data-id="d9dd0f6"
+                data-element_type="container" data-settings='{"content_width":"full","background_background":"classic"}'
+                data-core-v316-plus="true">
+                <div class="elementor-element elementor-element-1f0e89a e-con-full e-flex e-con e-child"
+                    data-id="1f0e89a" data-element_type="container" data-settings='{"content_width":"full"}'>
+                    <div class="elementor-element elementor-element-2891abd elementor-widget__width-auto e-transform elementor-widget elementor-widget-heading"
+                        data-id="2891abd" data-element_type="widget"
+                        data-settings='{"_transform_rotateZ_effect":{"unit":"px","size":-5,"sizes":[]},"_transform_rotateZ_effect_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_rotateZ_effect_mobile":{"unit":"deg","size":"","sizes":[]}}'
+                        data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                            <style>
+                                /*! elementor - v3.16.0 - 20-09-2023 */
+                                .elementor-heading-title {
+                                    padding: 0;
+                                    margin: 0;
+                                    line-height: 1;
+                                }
+
+                                .elementor-widget-heading .elementor-heading-title[class*="elementor-size-"]>a {
+                                    color: inherit;
+                                    font-size: inherit;
+                                    line-height: inherit;
+                                }
+
+                                .elementor-widget-heading .elementor-heading-title.elementor-size-small {
+                                    font-size: 15px;
+                                }
+
+                                .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+                                    font-size: 19px;
+                                }
+
+                                .elementor-widget-heading .elementor-heading-title.elementor-size-large {
+                                    font-size: 29px;
+                                }
+
+                                .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+                                    font-size: 39px;
+                                }
+
+                                .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+                                    font-size: 59px;
+                                }
+                            </style>
+                            <h6 class="elementor-heading-title elementor-size-default">
+                                {{ pred_output }}
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-67e47ca elementor-widget__width-auto elementor-widget-tablet__width-inherit elementor-widget elementor-widget-jkit_heading"
+                        data-id="67e47ca" data-element_type="widget" data-widget_type="jkit_heading.default">
+                        <div class="elementor-widget-container">
+                            <div
+                                class="jeg-elementor-kit jkit-heading align-center align-tablet- align-mobile- jeg_module_1273_1_65596f4167f68">
+                                <div class="elementor-widget-container">
+                                    <div class="jeg-elementor-kit jkit-post-title jeg_module_609_2_65596f41de00a">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-d6ffeec elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
+                        data-id="d6ffeec" data-element_type="widget" data-widget_type="text-editor.default">
+                        <div class="elementor-widget-container">
+                            <style>
+                                /*! elementor - v3.16.0 - 20-09-2023 */
+                                .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+                                    background-color: #69727d;
+                                    color: #fff;
+                                }
+
+                                .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+                                    color: #69727d;
+                                    border: 3px solid;
+                                    background-color: transparent;
+                                }
+
+                                .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+                                    margin-top: 8px;
+                                }
+
+                                .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+                                    width: 1em;
+                                    height: 1em;
+                                }
+
+                                .elementor-widget-text-editor .elementor-drop-cap {
+                                    float: left;
+                                    text-align: center;
+                                    line-height: 1;
+                                    font-size: 50px;
+                                }
+
+                                .elementor-widget-text-editor .elementor-drop-cap-letter {
+                                    display: inline-block;
+                                }
+                            </style>
+                            <p>
+                                "Ini tidak terlihat seperti tanaman"
+                                <br />
+                                <span>Sikapadi fokus pada deteksi masalah
+                                    terkait tanaman padi</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-c2c2ec3 e-flex e-con-boxed e-con e-child"
+                        data-id="c2c2ec3" data-element_type="container" data-settings='{"content_width":"boxed"}'>
+                        <div class="e-con-inner">
+                            <div class="elementor-element elementor-element-840eb24 elementor-widget__width-auto e-transform jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
+                                data-id="840eb24" data-element_type="widget"
+                                data-settings='{"_transform_translateX_effect_hover":{"unit":"px","size":10,"sizes":[]},"_transform_translateX_effect_hover_tablet":{"unit":"px","size":"","sizes":[]},"_transform_translateX_effect_hover_mobile":{"unit":"px","size":"","sizes":[]},"_transform_translateY_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_translateY_effect_hover_tablet":{"unit":"px","size":"","sizes":[]},"_transform_translateY_effect_hover_mobile":{"unit":"px","size":"","sizes":[]}}'
+                                data-widget_type="jkit_icon_box.default">
+                                <div class="elementor-widget-container">
+                                    <div
+                                        class="jeg-elementor-kit jkit-icon-box icon-position-right elementor-animation- jeg_module_1273_2_65596f416c62a">
+                                        <div class="jkit-icon-box-wrapper hover-from-left">
+                                            <div class="icon-box icon-box-header elementor-animation-">
+                                                <div class="icon style-color">
+                                                    <i aria-hidden="true" class="jki jki-arrow-right-line"></i>
+                                                </div>
+                                            </div>
+                                            <div class="icon-box icon-box-body">
+                                                <div class="icon-box-button">
+                                                    <div class="btn-wrapper icon-position-before">
+                                                        <a href="/" class="icon-box-link">Kembali
+                                                            Ke Home</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'klasifikasi/noklasifikasi/script.html' %}
+</body>
+
+</html>

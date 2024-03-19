@@ -1,0 +1,2463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="Aplikasi Deteksi Penyakit Tanaman Padi" />
+    <meta name="keywords" content="Sikapadi,Klasifikasi,Tanaman Padi" />
+    <meta name="author" content="Maulana Fiqri" />
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <link rel="pingback" href="xmlrpc.html" />
+    <title>SIKAPADI</title>
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="generator" content="Elementor 3.16.4" />
+
+    <link rel="stylesheet" id="jkit-elements-main-css"
+        href="static/assets/plugin/jeg-elementor-kit/assets/css/elements/main61da.css" media="all" />
+    <link rel="stylesheet" id="classic-theme-styles-css" href="static/assets/css/classic-themes.min68b3.css"
+        media="all" />
+    <link rel="stylesheet" id="elementor-frontend-css"
+        href="static/assets/plugin/elementor/assets/css/frontend-lite.minafc7.css" media="all" />
+    <link rel="stylesheet" id="elementor-post-3-css" href="static/assets/css/post-3c65a.css" media="all" />
+    <link rel="stylesheet" id="elementor-global-css" href="static/assets/css/global7b83.css" media="all" />
+    <link rel="stylesheet" id="elementor-post-1056-css" href="../static/assets/css/post-11591537.css" media="all" />
+    <link rel="stylesheet" id="hello-elementor-css" href="static/assets/dist/themes/hello-elementor/style.minc141.css"
+        media="all" />
+    <link rel="stylesheet" id="hello-elementor-theme-style-css"
+        href="static/assets/dist/themes/hello-elementor/theme.minc141.css" media="all" />
+    <link rel="stylesheet" id="google-fonts-1-css"
+        href="https://fonts.googleapis.com/css?family=Krona+One%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMandali%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.1.4"
+        media="all" />
+    <link rel="stylesheet" id="elementor-icons-jkiticon-css"
+        href="static/assets/plugin/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon61da.css" media="all" />
+    <script src="static/assets/js/jquery/jquery.mina7a0.js" id="jquery-core-js"></script>
+    <script src="static/assets//js/jquery/jquery-migrate.mind617.js" id="jquery-migrate-js"></script>
+    <script src="static/assets/plugin/allow-webp-image/public/js/allow-webp-image-publicf269.js"
+        id="allow-webp-image-js"></script>
+    <script src="static/assets/plugin/template-kit-export/public/assets/js/template-kit-export-public.min365c.js"
+        id="template-kit-export-js"></script>
+</head>
+
+<body
+	class="page-template page-template-elementor_header_footer page page-id-1159 jkit-color-scheme elementor-default elementor-template-full-width elementor-kit-3 elementor-page elementor-page-1159">
+	<div id="page" class="jkit-template  site">
+		<header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+			<style>
+				.elementor-1505 .elementor-element.elementor-element-c1a32ca {
+					--display: flex;
+					--flex-direction: row;
+					--container-widget-width: calc((1 - var(--container-widget-flex-grow)) * 100%);
+					--container-widget-height: 100%;
+					--container-widget-flex-grow: 1;
+					--container-widget-align-self: stretch;
+					--justify-content: space-between;
+					--align-items: center;
+					--gap: 0px 0px;
+					--background-transition: 0.3s;
+					--margin-block-start: 0px;
+					--margin-block-end: -100px;
+					--margin-inline-start: 0px;
+					--margin-inline-end: 0px;
+					--padding-block-start: 25px;
+					--padding-block-end: 0px;
+					--padding-inline-start: 30px;
+					--padding-inline-end: 30px;
+					--z-index: 98;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-d65c8d4 {
+					--display: flex;
+					--flex-direction: row;
+					--container-widget-width: calc((1 - var(--container-widget-flex-grow)) * 100%);
+					--container-widget-height: 100%;
+					--container-widget-flex-grow: 1;
+					--container-widget-align-self: stretch;
+					--justify-content: space-between;
+					--align-items: center;
+					--background-transition: 0.3s;
+					border-style: solid;
+					--border-style: solid;
+					border-width: 1px 1px 1px 1px;
+					--border-block-start-width: 1px;
+					--border-inline-end-width: 1px;
+					--border-block-end-width: 1px;
+					--border-inline-start-width: 1px;
+					border-color: var(--e-global-color-c8712f7);
+					--border-color: var(--e-global-color-c8712f7);
+					--border-radius: 20px 20px 20px 20px;
+					--padding-block-start: 0px;
+					--padding-block-end: 0px;
+					--padding-inline-start: 30px;
+					--padding-inline-end: 20px;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-d65c8d4:not(.elementor-motion-effects-element-type-background),
+				.elementor-1505 .elementor-element.elementor-element-d65c8d4>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+					background-color: transparent;
+					background-image: linear-gradient(180deg, var(--e-global-color-f4c498c) 0%, var(--e-global-color-b065eab) 100%);
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-d65c8d4,
+				.elementor-1505 .elementor-element.elementor-element-d65c8d4::before {
+					--border-transition: 0.3s;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-d65c8d4.elementor-element.e-flex::before {
+					content: "";
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					left: 0;
+					top: 0;
+					-webkit-backdrop-filter: blur(12px);
+					backdrop-filter: blur(12px);
+					border-radius: inherit;
+					background-color: inherit;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-8de3313 {
+					width: var(--container-widget-width, 200px);
+					max-width: 200px;
+					--container-widget-width: 200px;
+					--container-widget-flex-grow: 0;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu>ul,
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper:not(.active) .jkit-menu,
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper:not(.active) .jkit-menu>li>a {
+					display: flex;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu {
+					justify-content: flex-start;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .menu-item .sub-menu {
+					left: unset;
+					top: 100%;
+					right: unset;
+					bottom: unset;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .menu-item .sub-menu .menu-item .sub-menu {
+					left: 100%;
+					top: unset;
+					right: unset;
+					bottom: unset;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper {
+					height: 80px;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li>a {
+					font-family: var(--e-global-typography-451c75e-font-family), Sans-serif;
+					font-size: var(--e-global-typography-451c75e-font-size);
+					font-weight: var(--e-global-typography-451c75e-font-weight);
+					text-transform: var(--e-global-typography-451c75e-text-transform);
+					font-style: var(--e-global-typography-451c75e-font-style);
+					text-decoration: var(--e-global-typography-451c75e-text-decoration);
+					line-height: var(--e-global-typography-451c75e-line-height);
+					letter-spacing: var(--e-global-typography-451c75e-letter-spacing);
+					word-spacing: var(--e-global-typography-451c75e-word-spacing);
+					margin: 0px 10px 0px 10px;
+					color: var(--e-global-color-1af8e91);
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li>a i {
+					font-size: 14px;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li>a svg {
+					width: 14px;
+					fill: var(--e-global-color-1af8e91);
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li:hover>a {
+					color: var(--e-global-color-primary);
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li:hover>a svg {
+					fill: var(--e-global-color-primary);
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li.current-menu-item>a,
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li.current-menu-ancestor>a {
+					color: var(--e-global-color-primary);
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li.current-menu-item>a svg,
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li.current-menu-ancestor>a svg {
+					fill: var(--e-global-color-primary);
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children>a i,
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children>a svg {
+					border-style: none;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li a {
+					font-family: var(--e-global-typography-451c75e-font-family), Sans-serif;
+					font-size: var(--e-global-typography-451c75e-font-size);
+					font-weight: var(--e-global-typography-451c75e-font-weight);
+					text-transform: var(--e-global-typography-451c75e-text-transform);
+					font-style: var(--e-global-typography-451c75e-font-style);
+					text-decoration: var(--e-global-typography-451c75e-text-decoration);
+					line-height: var(--e-global-typography-451c75e-line-height);
+					letter-spacing: var(--e-global-typography-451c75e-letter-spacing);
+					word-spacing: var(--e-global-typography-451c75e-word-spacing);
+					padding: 10px 10px 10px 10px;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li>a {
+					color: var(--e-global-color-1af8e91);
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li>a svg {
+					fill: var(--e-global-color-1af8e91);
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li:hover>a {
+					color: var(--e-global-color-primary);
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li:hover>a svg {
+					fill: var(--e-global-color-primary);
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li.current-menu-item>a {
+					color: var(--e-global-color-primary);
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li.current-menu-item>a svg {
+					fill: var(--e-global-color-primary);
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children .sub-menu {
+					margin: 20px 0px 0px 0px;
+					padding: 15px 15px 15px 15px;
+					border-style: solid;
+					border-width: 1px 1px 1px 1px;
+					border-color: var(--e-global-color-c8712f7);
+					background-color: transparent;
+					background-image: linear-gradient(180deg, #FFFFFF 0%, #FFFFFFDE 100%);
+					border-radius: 10px 10px 10px 10px;
+					min-width: 220px;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu {
+					float: right;
+					background-color: var(--e-global-color-8868c7f);
+					border-style: none;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu:hover {
+					background-color: var(--e-global-color-8868c7f);
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu {
+					background-color: var(--e-global-color-accent);
+					border-style: none;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu:hover {
+					background-color: var(--e-global-color-secondary);
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-nav-site-title .jkit-nav-logo img {
+					object-fit: cover;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3 {
+					width: auto;
+					max-width: auto;
+				}
+
+				.elementor-1505 .elementor-element.elementor-element-47480c3.elementor-element {
+					--align-self: flex-start;
+				}
+
+				@media(max-width:1024px) {
+					.elementor-1505 .elementor-element.elementor-element-c1a32ca {
+						--flex-direction: row;
+						--container-widget-width: calc((1 - var(--container-widget-flex-grow)) * 100%);
+						--container-widget-height: 100%;
+						--container-widget-flex-grow: 1;
+						--container-widget-align-self: stretch;
+						--align-items: center;
+						--margin-block-start: 20px;
+						--margin-block-end: -90px;
+						--margin-inline-start: 0px;
+						--margin-inline-end: 0px;
+						--padding-block-start: 0px;
+						--padding-block-end: 0px;
+						--padding-inline-start: 20px;
+						--padding-inline-end: 20px;
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-c1a32ca.e-con {
+						--align-self: center;
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-d65c8d4 {
+						--padding-block-start: 20px;
+						--padding-block-end: 20px;
+						--padding-inline-start: 20px;
+						--padding-inline-end: 20px;
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-8de3313 {
+						--container-widget-width: 150px;
+						--container-widget-flex-grow: 0;
+						width: var(--container-widget-width, 150px);
+						max-width: 150px;
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu.break-point-mobile .jkit-menu-wrapper {
+						background-color: var(--e-global-color-1af8e91);
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu.break-point-tablet .jkit-menu-wrapper {
+						background-color: var(--e-global-color-1af8e91);
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li>a {
+						font-size: var(--e-global-typography-451c75e-font-size);
+						line-height: var(--e-global-typography-451c75e-line-height);
+						letter-spacing: var(--e-global-typography-451c75e-letter-spacing);
+						word-spacing: var(--e-global-typography-451c75e-word-spacing);
+						margin: 0px 10px 0px 20px;
+						padding: 10px 10px 10px 10px;
+						color: var(--e-global-color-c24952c);
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li>a svg {
+						fill: var(--e-global-color-c24952c);
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children>a i,
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children>a svg {
+						margin: 0px 8px 0px 0px;
+						padding: 0px 0px 0px 0px;
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li a {
+						font-size: var(--e-global-typography-451c75e-font-size);
+						line-height: var(--e-global-typography-451c75e-line-height);
+						letter-spacing: var(--e-global-typography-451c75e-letter-spacing);
+						word-spacing: var(--e-global-typography-451c75e-word-spacing);
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children .sub-menu {
+						margin: 0px 30px 0px 30px;
+						padding: 10px 10px 10px 10px;
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu i {
+						font-size: 25px;
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu svg {
+						width: 25px;
+						fill: var(--e-global-color-primary);
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu {
+						color: var(--e-global-color-primary);
+						margin: 5px 0px 0px 0px;
+						padding: 0px 0px 0px 0px;
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu:hover {
+						color: var(--e-global-color-secondary);
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu:hover svg {
+						fill: var(--e-global-color-secondary);
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu {
+						width: 24px;
+						border-radius: 20px 20px 20px 20px;
+						color: var(--e-global-color-primary);
+						margin: 10px 22px 0px 0px;
+						padding: 0px 0px 0px 0px;
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu i {
+						font-size: 13px;
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu svg {
+						width: 13px;
+						fill: var(--e-global-color-primary);
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu:hover {
+						color: var(--e-global-color-1af8e91);
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu:hover svg {
+						fill: var(--e-global-color-1af8e91);
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-nav-site-title .jkit-nav-logo img {
+						max-width: 180px;
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-nav-site-title .jkit-nav-logo {
+						margin: 30px 0px 0px 30px;
+					}
+				}
+
+				@media(max-width:767px) {
+					.elementor-1505 .elementor-element.elementor-element-c1a32ca {
+						--margin-block-start: 0px;
+						--margin-block-end: -80px;
+						--margin-inline-start: 0px;
+						--margin-inline-end: 0px;
+						--padding-block-start: 10px;
+						--padding-block-end: 0px;
+						--padding-inline-start: 10px;
+						--padding-inline-end: 10px;
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-d65c8d4 {
+						--padding-block-start: 15px;
+						--padding-block-end: 15px;
+						--padding-inline-start: 20px;
+						--padding-inline-end: 20px;
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-8de3313 {
+						--container-widget-width: 140px;
+						--container-widget-flex-grow: 0;
+						width: var(--container-widget-width, 140px);
+						max-width: 140px;
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li>a {
+						font-size: var(--e-global-typography-451c75e-font-size);
+						line-height: var(--e-global-typography-451c75e-line-height);
+						letter-spacing: var(--e-global-typography-451c75e-letter-spacing);
+						word-spacing: var(--e-global-typography-451c75e-word-spacing);
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li a {
+						font-size: var(--e-global-typography-451c75e-font-size);
+						line-height: var(--e-global-typography-451c75e-line-height);
+						letter-spacing: var(--e-global-typography-451c75e-letter-spacing);
+						word-spacing: var(--e-global-typography-451c75e-word-spacing);
+					}
+
+					.elementor-1505 .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-nav-site-title .jkit-nav-logo img {
+						max-width: 240px;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu {
+						display: block;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper {
+						width: 100%;
+						max-width: 360px;
+						border-radius: 0;
+						background-color: #f7f7f7;
+						width: 100%;
+						position: fixed;
+						top: 0;
+						left: -110%;
+						height: 100% !important;
+						box-shadow: 0 10px 30px 0 rgba(255, 165, 0, 0);
+						overflow-y: auto;
+						overflow-x: hidden;
+						padding-top: 0;
+						padding-left: 0;
+						padding-right: 0;
+						display: flex;
+						flex-direction: column-reverse;
+						justify-content: flex-end;
+						-moz-transition: left .6s cubic-bezier(.6, .1, .68, .53), width .6s;
+						-webkit-transition: left .6s cubic-bezier(.6, .1, .68, .53), width .6s;
+						-o-transition: left .6s cubic-bezier(.6, .1, .68, .53), width .6s;
+						-ms-transition: left .6s cubic-bezier(.6, .1, .68, .53), width .6s;
+						transition: left .6s cubic-bezier(.6, .1, .68, .53), width .6s;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper.active {
+						left: 0;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu-container {
+						overflow-y: hidden;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel {
+						padding: 10px 0px 10px 0px;
+						display: block;
+						position: relative;
+						z-index: 5;
+						width: 100%;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-nav-site-title {
+						display: inline-block;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu {
+						display: block;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu {
+						display: block;
+						height: 100%;
+						overflow-y: auto;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children>a i {
+						margin-left: auto;
+						border: 1px solid var(--jkit-border-color);
+						border-radius: 3px;
+						padding: 4px 15px;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children>a svg {
+						margin-left: auto;
+						border: 1px solid var(--jkit-border-color);
+						border-radius: 3px;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children .sub-menu {
+						position: inherit;
+						box-shadow: none;
+						background: none;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li {
+						display: block;
+						width: 100%;
+						position: inherit;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li .sub-menu {
+						display: none;
+						max-height: 2500px;
+						opacity: 0;
+						visibility: hidden;
+						transition: max-height 5s ease-out;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li .sub-menu.dropdown-open {
+						display: block;
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li a {
+						display: block;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li a i {
+						float: right;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li a svg {
+						float: right
+					}
+				}
+
+				@media (min-width: 1025px) {
+					.elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu-container {
+						height: 100%;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					.admin-bar .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper {
+						top: 32px;
+					}
+				}
+
+				@media (max-width: 782px) {
+					.admin-bar .elementor-element.elementor-element-47480c3 .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper {
+						top: 46px;
+					}
+				}
+			</style>
+			<div data-elementor-type="page" data-elementor-id="1505" class="elementor elementor-1505">
+				<div class="elementor-element elementor-element-c1a32ca e-con-full e-flex e-con e-parent"
+					data-id="c1a32ca" data-element_type="container"
+					data-settings="{&quot;content_width&quot;:&quot;full&quot;}" data-core-v316-plus="true">
+					<div class="elementor-element elementor-element-d65c8d4 e-con-full e-flex e-con e-child"
+						data-id="d65c8d4" data-element_type="container"
+						data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;gradient&quot;}">
+						<div class="elementor-element elementor-element-8de3313 elementor-widget__width-initial elementor-widget elementor-widget-image"
+							data-id="8de3313" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<style>
+									/*! elementor - v3.16.0 - 20-09-2023 */
+									.elementor-widget-image {
+										text-align: center
+									}
+
+									.elementor-widget-image a {
+										display: inline-block
+									}
+
+									.elementor-widget-image a img[src$=".svg"] {
+										width: 48px
+									}
+
+									.elementor-widget-image img {
+										vertical-align: middle;
+										display: inline-block
+									}
+								</style> <a href="../index.html">
+									<img width="800" height="139"
+										src="../wp-content/uploads/sites/421/2023/10/logo-agroponix-1024x178.png"
+										class="attachment-large size-large wp-image-797" alt decoding="async"
+										loading="lazy"
+										srcset="https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/logo-agroponix-1024x178.png 1024w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/logo-agroponix-e1697700159973-300x52.png 300w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/logo-agroponix-e1697700159973-768x133.png 768w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/logo-agroponix-1536x268.png 1536w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/logo-agroponix-2048x357.png 2048w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/logo-agroponix-e1697700159973.png 800w"
+										sizes="(max-width: 800px) 100vw, 800px" /> </a>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-47480c3 elementor-widget__width-auto elementor-widget elementor-widget-jkit_nav_menu"
+							data-id="47480c3" data-element_type="widget" data-widget_type="jkit_nav_menu.default">
+							<div class="elementor-widget-container">
+								<div class="jeg-elementor-kit jkit-nav-menu break-point-tablet submenu-click-title jeg_module_1159__65596f3d1433f"
+									data-item-indicator="&lt;i aria-hidden=&quot;true&quot; class=&quot;jki jki-angle-down-solid&quot;&gt;&lt;/i&gt;">
+									<button class="jkit-hamburger-menu"><i aria-hidden="true"
+											class="jki jki-menu-7-light"></i></button>
+									<div class="jkit-menu-wrapper">
+										<div class="jkit-menu-container">
+											<ul id="menu-menu"
+												class="jkit-menu jkit-menu-direction-flex jkit-submenu-position-top">
+												<li id="menu-item-16"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-16">
+													<a href="../index.html">Home</a>
+												</li>
+												<li id="menu-item-1435"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1435">
+													<a href="../about-us/index.html">About Us</a>
+												</li>
+												<li id="menu-item-18"
+													class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-18">
+													<a href="#">Services</a>
+													<ul class="sub-menu">
+														<li id="menu-item-1436"
+															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1436">
+															<a href="../services/index.html">Services</a>
+														</li>
+														<li id="menu-item-1437"
+															class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1159 current_page_item menu-item-1437">
+															<a href="index.html" aria-current="page">Service Details</a>
+														</li>
+													</ul>
+												</li>
+												<li id="menu-item-23"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-23">
+													<a href="#">Pages</a>
+													<ul class="sub-menu">
+														<li id="menu-item-1438"
+															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1438">
+															<a href="../team/index.html">Team</a>
+														</li>
+														<li id="menu-item-1439"
+															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1439">
+															<a href="../faq/index.html">FAQ</a>
+														</li>
+														<li id="menu-item-1440"
+															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1440">
+															<a href="../404-page/index.html">404 Page</a>
+														</li>
+													</ul>
+												</li>
+												<li id="menu-item-25"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25">
+													<a href="#">Blog</a>
+													<ul class="sub-menu">
+														<li id="menu-item-1441"
+															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1441">
+															<a href="../blog/index.html">Blog</a>
+														</li>
+														<li id="menu-item-1442"
+															class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1442">
+															<a
+																href="../2023/10/18/modernizing-agriculture-for-a-greener/index.html">Single
+																Post</a>
+														</li>
+													</ul>
+												</li>
+												<li id="menu-item-1443"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1443">
+													<a href="../contact/index.html">Contact</a>
+												</li>
+											</ul>
+										</div>
+										<div class="jkit-nav-identity-panel">
+											<div class="jkit-nav-site-title"><a
+													href="https://templatekit.jegtheme.com/agroponix"
+													class="jkit-nav-logo"><img
+														src="../wp-content/uploads/sites/421/2023/10/logo-agroponix-white-1024x178.png"></a>
+											</div>
+											<button class="jkit-close-menu"><i aria-hidden="true"
+													class="jki jki-times-solid"></i></button>
+										</div>
+									</div>
+									<div class="jkit-overlay"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div data-elementor-type="wp-page" data-elementor-id="1159" class="elementor elementor-1159">
+			<div class="elementor-element elementor-element-537c92d e-con-full e-flex e-con e-parent" data-id="537c92d"
+				data-element_type="container"
+				data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}"
+				data-core-v316-plus="true">
+				<div class="elementor-element elementor-element-096d97d e-con-full e-flex e-con e-child"
+					data-id="096d97d" data-element_type="container"
+					data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+					<div class="elementor-element elementor-element-e0aa3d7 elementor-widget__width-auto e-transform elementor-widget elementor-widget-heading"
+						data-id="e0aa3d7" data-element_type="widget"
+						data-settings="{&quot;_transform_rotateZ_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-5,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
+						data-widget_type="heading.default">
+						<div class="elementor-widget-container">
+							<style>
+								/*! elementor - v3.16.0 - 20-09-2023 */
+								.elementor-heading-title {
+									padding: 0;
+									margin: 0;
+									line-height: 1
+								}
+
+								.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+									color: inherit;
+									font-size: inherit;
+									line-height: inherit
+								}
+
+								.elementor-widget-heading .elementor-heading-title.elementor-size-small {
+									font-size: 15px
+								}
+
+								.elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+									font-size: 19px
+								}
+
+								.elementor-widget-heading .elementor-heading-title.elementor-size-large {
+									font-size: 29px
+								}
+
+								.elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+									font-size: 39px
+								}
+
+								.elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+									font-size: 59px
+								}
+							</style>
+							<h6 class="elementor-heading-title elementor-size-default">Service Details</h6>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-28d5dd8 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget elementor-widget-jkit_heading"
+						data-id="28d5dd8" data-element_type="widget" data-widget_type="jkit_heading.default">
+						<div class="elementor-widget-container">
+							<div
+								class="jeg-elementor-kit jkit-heading  align-center align-tablet- align-mobile- jeg_module_1159_1_65596f3d1dbb0">
+								<div class="heading-section-title  display-inline-block">
+									<h1 class="heading-title">Hydroponic System</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-e112e46 e-flex e-con-boxed e-con e-parent" data-id="e112e46"
+				data-element_type="container"
+				data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}"
+				data-core-v316-plus="true">
+				<div class="e-con-inner">
+					<div class="elementor-element elementor-element-9f30886 e-flex e-con-boxed e-con e-child"
+						data-id="9f30886" data-element_type="container"
+						data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+						<div class="e-con-inner">
+							<div class="elementor-element elementor-element-5b90de9 elementor-widget elementor-widget-image"
+								data-id="5b90de9" data-element_type="widget" data-widget_type="image.default">
+								<div class="elementor-widget-container">
+									<img width="800" height="534"
+										src="../wp-content/uploads/sites/421/2023/10/young-farmer-woman-checking-and-holding-kale-fresh-organic-vegetable-in-hydroponic-smart-farm-produ-e1698030285997-1024x683.jpg"
+										class="attachment-large size-large wp-image-1063"
+										alt="Young farmer woman checking and holding kale fresh organic vegetable in hydroponic smart farm, produ"
+										decoding="async" loading="lazy"
+										srcset="https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/young-farmer-woman-checking-and-holding-kale-fresh-organic-vegetable-in-hydroponic-smart-farm-produ-e1698030285997-1024x683.jpg 1024w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/young-farmer-woman-checking-and-holding-kale-fresh-organic-vegetable-in-hydroponic-smart-farm-produ-e1698030285997-300x200.jpg 300w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/young-farmer-woman-checking-and-holding-kale-fresh-organic-vegetable-in-hydroponic-smart-farm-produ-e1698030285997-768x512.jpg 768w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/young-farmer-woman-checking-and-holding-kale-fresh-organic-vegetable-in-hydroponic-smart-farm-produ-e1698030285997-1536x1024.jpg 1536w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/young-farmer-woman-checking-and-holding-kale-fresh-organic-vegetable-in-hydroponic-smart-farm-produ-e1698030285997-800x533.jpg 800w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/young-farmer-woman-checking-and-holding-kale-fresh-organic-vegetable-in-hydroponic-smart-farm-produ-e1698030285997.jpg 1920w"
+										sizes="(max-width: 800px) 100vw, 800px" />
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-26044bb elementor-widget__width-inherit elementor-widget elementor-widget-jkit_heading"
+								data-id="26044bb" data-element_type="widget" data-widget_type="jkit_heading.default">
+								<div class="elementor-widget-container">
+									<div
+										class="jeg-elementor-kit jkit-heading  align-left align-tablet- align-mobile- jeg_module_1159_2_65596f3d23fcb">
+										<div class="heading-section-title  display-inline-block">
+											<h3 class="heading-title">Cultivating the Future of Agriculture</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-6375f29 elementor-widget__width-inherit elementor-widget elementor-widget-text-editor"
+								data-id="6375f29" data-element_type="widget" data-widget_type="text-editor.default">
+								<div class="elementor-widget-container">
+									<style>
+										/*! elementor - v3.16.0 - 20-09-2023 */
+										.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+											background-color: #69727d;
+											color: #fff
+										}
+
+										.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+											color: #69727d;
+											border: 3px solid;
+											background-color: transparent
+										}
+
+										.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+											margin-top: 8px
+										}
+
+										.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+											width: 1em;
+											height: 1em
+										}
+
+										.elementor-widget-text-editor .elementor-drop-cap {
+											float: left;
+											text-align: center;
+											line-height: 1;
+											font-size: 50px
+										}
+
+										.elementor-widget-text-editor .elementor-drop-cap-letter {
+											display: inline-block
+										}
+									</style> Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo
+									ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+									parturient montes nascetur ridiculus mus. Donec quam felis ultricies nec
+									pellentesque eu pretium quis sem.
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-1cfa2d2 e-flex e-con-boxed e-con e-child"
+								data-id="1cfa2d2" data-element_type="container"
+								data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+								<div class="e-con-inner">
+									<div class="elementor-element elementor-element-5af6bad elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+										data-id="5af6bad" data-element_type="widget"
+										data-widget_type="text-editor.default">
+										<div class="elementor-widget-container">
+											<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+												enim justo rhoncus ut,imperdiet a venenatis vitae justo. Nullam dictum
+												felis eu pede mollis pretium. Integer tincidunt.</p>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-3bdd18e elementor-widget__width-inherit elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+										data-id="3bdd18e" data-element_type="widget"
+										data-widget_type="icon-list.default">
+										<div class="elementor-widget-container">
+											<link rel="stylesheet"
+												href="../wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
+											<ul class="elementor-icon-list-items">
+												<li class="elementor-icon-list-item">
+													<a href="#">
+														<span class="elementor-icon-list-icon">
+															<i aria-hidden="true" class="jki jki-check-light"></i>
+														</span>
+														<span class="elementor-icon-list-text">Donec vitae sapien ut
+															libero</span>
+													</a>
+												</li>
+												<li class="elementor-icon-list-item">
+													<a href="#">
+														<span class="elementor-icon-list-icon">
+															<i aria-hidden="true" class="jki jki-check-light"></i>
+														</span>
+														<span class="elementor-icon-list-text">Nullam quis ante sit
+															amet</span>
+													</a>
+												</li>
+												<li class="elementor-icon-list-item">
+													<a href="#">
+														<span class="elementor-icon-list-icon">
+															<i aria-hidden="true" class="jki jki-check-light"></i>
+														</span>
+														<span class="elementor-icon-list-text">Amet adipiscing sem
+															neque</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-bd657b9 elementor-widget__width-inherit elementor-widget elementor-widget-jkit_heading"
+								data-id="bd657b9" data-element_type="widget" data-widget_type="jkit_heading.default">
+								<div class="elementor-widget-container">
+									<div
+										class="jeg-elementor-kit jkit-heading  align-left align-tablet- align-mobile- jeg_module_1159_3_65596f3d2948f">
+										<div class="heading-section-title  display-inline-block">
+											<h4 class="heading-title">Organic Hydroponics</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-1f355dd elementor-widget__width-inherit elementor-widget elementor-widget-text-editor"
+								data-id="1f355dd" data-element_type="widget" data-widget_type="text-editor.default">
+								<div class="elementor-widget-container">
+									Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+									Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+									Etiam rhoncus. Maecenas tempus tellus eget condimentum rhoncus sem quam semper
+									libero sit amet adipiscing sem neque sed ipsum. Nam quam nunc blandit vel luctus
+									pulvinar hendrerit. </div>
+							</div>
+							<div class="elementor-element elementor-element-1671fdb elementor-widget elementor-widget-image-carousel"
+								data-id="1671fdb" data-element_type="widget"
+								data-settings="{&quot;slides_to_show&quot;:&quot;2&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
+								data-widget_type="image-carousel.default">
+								<div class="elementor-widget-container">
+									<style>
+										/*! elementor - v3.16.0 - 20-09-2023 */
+										.elementor-widget-image-carousel .swiper,
+										.elementor-widget-image-carousel .swiper-container {
+											position: static
+										}
+
+										.elementor-widget-image-carousel .swiper-container .swiper-slide figure,
+										.elementor-widget-image-carousel .swiper .swiper-slide figure {
+											line-height: inherit
+										}
+
+										.elementor-widget-image-carousel .swiper-slide {
+											text-align: center
+										}
+
+										.elementor-image-carousel-wrapper:not(.swiper-container-initialized):not(.swiper-initialized) .swiper-slide {
+											max-width: calc(100% / var(--e-image-carousel-slides-to-show, 3))
+										}
+									</style>
+									<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+										<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+											<div class="swiper-slide" role="group" aria-roledescription="slide"
+												aria-label="1 of 4">
+												<figure class="swiper-slide-inner"><img decoding="async"
+														class="swiper-slide-image"
+														src="../wp-content/uploads/sites/421/2023/10/woman-in-the-hydroponic-vegetable-farm-grows-wholesale-hydroponic-vegetables-in-restaurants-and-supe-e1697789890987-1024x576.jpg"
+														alt="woman in the hydroponic vegetable farm grows wholesale hydroponic vegetables in restaurants and supe" />
+												</figure>
+											</div>
+											<div class="swiper-slide" role="group" aria-roledescription="slide"
+												aria-label="2 of 4">
+												<figure class="swiper-slide-inner"><img decoding="async"
+														class="swiper-slide-image"
+														src="../wp-content/uploads/sites/421/2023/10/hydroponics-smiling-young-asian-couple-farmer-harvest-organic-vegetable-salad-from-farm-garden--e1698040021703-1024x576.jpg"
+														alt="Hydroponics. Smiling young Asian couple farmer harvest organic vegetable salad from farm garden." />
+												</figure>
+											</div>
+											<div class="swiper-slide" role="group" aria-roledescription="slide"
+												aria-label="3 of 4">
+												<figure class="swiper-slide-inner"><img decoding="async"
+														class="swiper-slide-image"
+														src="../wp-content/uploads/sites/421/2023/10/hydroponics-vegetable-L65BADV-1024x576.jpg"
+														alt="Hydroponics vegetable farm" /></figure>
+											</div>
+											<div class="swiper-slide" role="group" aria-roledescription="slide"
+												aria-label="4 of 4">
+												<figure class="swiper-slide-inner"><img decoding="async"
+														class="swiper-slide-image"
+														src="../wp-content/uploads/sites/421/2023/10/farmer-examining-the-quality-in-hydroponic-greenhouse--e1698040280156-1024x576.jpg"
+														alt="Farmer examining the quality in hydroponic greenhouse." />
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-001cf02 elementor-widget__width-inherit elementor-widget elementor-widget-jkit_heading"
+								data-id="001cf02" data-element_type="widget" data-widget_type="jkit_heading.default">
+								<div class="elementor-widget-container">
+									<div
+										class="jeg-elementor-kit jkit-heading  align-left align-tablet- align-mobile- jeg_module_1159_4_65596f3d30c81">
+										<div class="heading-section-title  display-inline-block">
+											<h5 class="heading-title">Conclusion</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-f507fe9 elementor-widget__width-inherit elementor-widget elementor-widget-text-editor"
+								data-id="f507fe9" data-element_type="widget" data-widget_type="text-editor.default">
+								<div class="elementor-widget-container">
+									<p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
+										sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum
+										sodales, augue velit cursus nunc. Curabitur ullamcorper ultricies nisi. Nam eget
+										dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam
+										semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+										vel, luctus pulvinar, hendrerit id, lorem maecenas ante tincidunt tempus.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-4c48326 e-con-full e-flex e-con e-child"
+						data-id="4c48326" data-element_type="container"
+						data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+						<div class="elementor-element elementor-element-f073b80 jkit-sticky-element--enabled e-con-full e-flex jkit-sticky-element-on--down jkit-sticky-position--sticky e-con e-child"
+							data-id="f073b80" data-element_type="container"
+							data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;jkit_sticky_device&quot;:&quot;desktop&quot;,&quot;jkit_sticky_top_position&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]}}">
+							<div class="elementor-element elementor-element-5d274c4 e-flex e-con-boxed e-con e-child"
+								data-id="5d274c4" data-element_type="container"
+								data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+								<div class="e-con-inner">
+									<div class="elementor-element elementor-element-548ba15 elementor-widget elementor-widget-heading"
+										data-id="548ba15" data-element_type="widget" data-widget_type="heading.default">
+										<div class="elementor-widget-container">
+											<h3 class="elementor-heading-title elementor-size-default">Other Services
+											</h3>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-6546fc3 elementor-widget__width-auto e-transform elementor-widget-mobile__width-auto jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
+										data-id="6546fc3" data-element_type="widget"
+										data-settings="{&quot;_transform_translateX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-10,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
+										data-widget_type="jkit_icon_box.default">
+										<div class="elementor-widget-container">
+											<div
+												class="jeg-elementor-kit jkit-icon-box icon-position-left elementor-animation- jeg_module_1159_5_65596f3d3dcbc">
+												<a href="#" class="icon-box-link">
+													<div class="jkit-icon-box-wrapper hover-from-left">
+														<div class="icon-box icon-box-header elementor-animation-">
+															<div class="icon style-color"><i aria-hidden="true"
+																	class="fas fa-chevron-right"></i></div>
+														</div>
+														<div class="icon-box icon-box-body">
+															<h6 class="title">Agricultural Consult</h6>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-ca8f832 elementor-widget__width-auto e-transform elementor-widget-mobile__width-auto jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
+										data-id="ca8f832" data-element_type="widget"
+										data-settings="{&quot;_transform_translateX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-10,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
+										data-widget_type="jkit_icon_box.default">
+										<div class="elementor-widget-container">
+											<div
+												class="jeg-elementor-kit jkit-icon-box icon-position-left elementor-animation- jeg_module_1159_6_65596f3d3f4bc">
+												<a href="#" class="icon-box-link">
+													<div class="jkit-icon-box-wrapper hover-from-left">
+														<div class="icon-box icon-box-header elementor-animation-">
+															<div class="icon style-color"><i aria-hidden="true"
+																	class="fas fa-chevron-right"></i></div>
+														</div>
+														<div class="icon-box icon-box-body">
+															<h6 class="title">Organic Farming</h6>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-b9fcef3 elementor-widget__width-auto e-transform elementor-widget-mobile__width-auto jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
+										data-id="b9fcef3" data-element_type="widget"
+										data-settings="{&quot;_transform_translateX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-10,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
+										data-widget_type="jkit_icon_box.default">
+										<div class="elementor-widget-container">
+											<div
+												class="jeg-elementor-kit jkit-icon-box icon-position-left elementor-animation- jeg_module_1159_7_65596f3d40763">
+												<a href="#" class="icon-box-link">
+													<div class="jkit-icon-box-wrapper hover-from-left">
+														<div class="icon-box icon-box-header elementor-animation-">
+															<div class="icon style-color"><i aria-hidden="true"
+																	class="fas fa-chevron-right"></i></div>
+														</div>
+														<div class="icon-box icon-box-body">
+															<h6 class="title">Plant Nutrient</h6>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-ad145d9 elementor-widget__width-auto e-transform elementor-widget-mobile__width-auto jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
+										data-id="ad145d9" data-element_type="widget"
+										data-settings="{&quot;_transform_translateX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-10,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
+										data-widget_type="jkit_icon_box.default">
+										<div class="elementor-widget-container">
+											<div
+												class="jeg-elementor-kit jkit-icon-box icon-position-left elementor-animation- jeg_module_1159_8_65596f3d419a5">
+												<a href="#" class="icon-box-link">
+													<div class="jkit-icon-box-wrapper hover-from-left">
+														<div class="icon-box icon-box-header elementor-animation-">
+															<div class="icon style-color"><i aria-hidden="true"
+																	class="fas fa-chevron-right"></i></div>
+														</div>
+														<div class="icon-box icon-box-body">
+															<h6 class="title">Soil Analysis</h6>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-77a1ed6 e-flex e-con-boxed e-con e-child"
+								data-id="77a1ed6" data-element_type="container"
+								data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+								<div class="e-con-inner">
+									<div class="elementor-element elementor-element-57cdf4a elementor-widget__width-inherit elementor-widget elementor-widget-jkit_heading"
+										data-id="57cdf4a" data-element_type="widget"
+										data-widget_type="jkit_heading.default">
+										<div class="elementor-widget-container">
+											<div
+												class="jeg-elementor-kit jkit-heading  align-left align-tablet- align-mobile- jeg_module_1159_9_65596f3d438ae">
+												<div class="heading-section-title  display-inline-block">
+													<h4 class="heading-title">What to make a Hydroponic?</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-e8adfb9 elementor-widget__width-inherit elementor-widget elementor-widget-text-editor"
+										data-id="e8adfb9" data-element_type="widget"
+										data-widget_type="text-editor.default">
+										<div class="elementor-widget-container">
+											<p>Lorem ipsum dolor sit amet adipiscing elit aenean commodo ligula eget.
+											</p>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-18c46d4 elementor-widget__width-auto e-transform jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
+										data-id="18c46d4" data-element_type="widget"
+										data-settings="{&quot;_transform_translateX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
+										data-widget_type="jkit_icon_box.default">
+										<div class="elementor-widget-container">
+											<div
+												class="jeg-elementor-kit jkit-icon-box icon-position-right elementor-animation- jeg_module_1159_10_65596f3d45498">
+												<div class="jkit-icon-box-wrapper hover-from-left">
+													<div class="icon-box icon-box-header elementor-animation-">
+														<div class="icon style-color"><i aria-hidden="true"
+																class="jki jki-arrow-right-line"></i></div>
+													</div>
+													<div class="icon-box icon-box-body">
+														<div class="icon-box-button ">
+															<div class="btn-wrapper icon-position-before">
+																<a href="#" class="icon-box-link">Contact Us</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+			<style>
+				.elementor-1037 .elementor-element.elementor-element-987f021 {
+					--display: flex;
+					--flex-direction: column;
+					--container-widget-width: calc((1 - var(--container-widget-flex-grow)) * 100%);
+					--container-widget-height: initial;
+					--container-widget-flex-grow: 0;
+					--container-widget-align-self: initial;
+					--align-items: center;
+					--background-transition: 0.3s;
+					--margin-block-start: -30px;
+					--margin-block-end: 0px;
+					--margin-inline-start: 0px;
+					--margin-inline-end: 0px;
+					--padding-block-start: 150px;
+					--padding-block-end: 30px;
+					--padding-inline-start: 0px;
+					--padding-inline-end: 0px;
+					--z-index: 0;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-987f021:not(.elementor-motion-effects-element-type-background),
+				.elementor-1037 .elementor-element.elementor-element-987f021>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+					background-color: var(--e-global-color-1af8e91);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-987f021,
+				.elementor-1037 .elementor-element.elementor-element-987f021::before {
+					--border-transition: 0.3s;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-420e7cb {
+					--display: flex;
+					--min-height: 50px;
+					--flex-direction: column;
+					--container-widget-width: 100%;
+					--container-widget-height: initial;
+					--container-widget-flex-grow: 0;
+					--container-widget-align-self: initial;
+					--justify-content: space-between;
+					--gap: 0px 0px;
+					--background-transition: 0.3s;
+					--padding-block-start: 0px;
+					--padding-block-end: 0px;
+					--padding-inline-start: 0px;
+					--padding-inline-end: 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-2414e3f {
+					--display: flex;
+					--flex-direction: row;
+					--container-widget-width: initial;
+					--container-widget-height: 100%;
+					--container-widget-flex-grow: 1;
+					--container-widget-align-self: stretch;
+					--justify-content: space-between;
+					--background-transition: 0.3s;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-4b34925 {
+					--display: flex;
+					--background-transition: 0.3s;
+					--padding-block-start: 0px;
+					--padding-block-end: 0px;
+					--padding-inline-start: 0px;
+					--padding-inline-end: 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-e225d31>.elementor-widget-container {
+					margin: 0px 0px 20px 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-e225d31 {
+					width: var(--container-widget-width, 220px);
+					max-width: 220px;
+					--container-widget-width: 220px;
+					--container-widget-flex-grow: 0;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-fb8bb8a .jeg-elementor-kit.jkit-heading {
+					text-align: left;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-fb8bb8a .jeg-elementor-kit.jkit-heading .heading-title {
+					font-family: var(--e-global-typography-secondary-font-family), Sans-serif;
+					font-size: var(--e-global-typography-secondary-font-size);
+					font-weight: var(--e-global-typography-secondary-font-weight);
+					text-transform: var(--e-global-typography-secondary-text-transform);
+					font-style: var(--e-global-typography-secondary-font-style);
+					text-decoration: var(--e-global-typography-secondary-text-decoration);
+					line-height: var(--e-global-typography-secondary-line-height);
+					color: var(--e-global-color-c24952c);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-fb8bb8a .jeg-elementor-kit.jkit-heading .heading-title>span {
+					padding: 0px 0px 2px 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-fb8bb8a>.elementor-widget-container {
+					margin: 0px 0px -25px 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-fb8bb8a {
+					width: var(--container-widget-width, 420px);
+					max-width: 420px;
+					--container-widget-width: 420px;
+					--container-widget-flex-grow: 0;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-d0e5bd9 {
+					color: var(--e-global-color-c8712f7);
+					font-family: var(--e-global-typography-text-font-family), Sans-serif;
+					font-size: var(--e-global-typography-text-font-size);
+					font-weight: var(--e-global-typography-text-font-weight);
+					text-transform: var(--e-global-typography-text-text-transform);
+					font-style: var(--e-global-typography-text-font-style);
+					text-decoration: var(--e-global-typography-text-text-decoration);
+					line-height: var(--e-global-typography-text-line-height);
+					width: auto;
+					max-width: auto;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-d0e5bd9>.elementor-widget-container {
+					margin: 0px 0px 10px 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp .jkit-form-control {
+					font-family: var(--e-global-typography-text-font-family), Sans-serif;
+					font-size: var(--e-global-typography-text-font-size);
+					font-weight: var(--e-global-typography-text-font-weight);
+					text-transform: var(--e-global-typography-text-text-transform);
+					font-style: var(--e-global-typography-text-font-style);
+					text-decoration: var(--e-global-typography-text-text-decoration);
+					line-height: var(--e-global-typography-text-line-height);
+					color: var(--e-global-color-1af8e91);
+					background-color: var(--e-global-color-c24952c);
+					border-radius: 50px 50px 50px 50px;
+					padding: 22px 30px 22px 30px;
+					border-style: none;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp.style-inline .jkit-input-wrapper:not(.jkit-submit-input-holder) {
+					-webkit-box-flex: 99%;
+					-ms-flex: 0 0 99%;
+					flex: 0 0 99%;
+					margin-right: -150px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp .jkit-input-wrapper:not(.jkit-submit-input-holder) {
+					margin-bottom: 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp .jkit-form-control::placeholder {
+					font-family: var(--e-global-typography-text-font-family), Sans-serif;
+					font-size: var(--e-global-typography-text-font-size);
+					font-weight: var(--e-global-typography-text-font-weight);
+					text-transform: var(--e-global-typography-text-text-transform);
+					font-style: var(--e-global-typography-text-font-style);
+					text-decoration: var(--e-global-typography-text-text-decoration);
+					line-height: var(--e-global-typography-text-line-height);
+					color: var(--e-global-color-10354ca);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp.style-inline .jkit-submit-input-holder {
+					align-self: center;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp .jkit-mailchimp-submit {
+					font-family: var(--e-global-typography-37dfe24-font-family), Sans-serif;
+					font-size: var(--e-global-typography-37dfe24-font-size);
+					font-weight: var(--e-global-typography-37dfe24-font-weight);
+					text-transform: var(--e-global-typography-37dfe24-text-transform);
+					font-style: var(--e-global-typography-37dfe24-font-style);
+					text-decoration: var(--e-global-typography-37dfe24-text-decoration);
+					line-height: var(--e-global-typography-37dfe24-line-height);
+					letter-spacing: var(--e-global-typography-37dfe24-letter-spacing);
+					word-spacing: var(--e-global-typography-37dfe24-word-spacing);
+					border-radius: 50px 50px 50px 50px;
+					padding: 13px 30px 15px 30px;
+					border-style: solid;
+					border-width: 1px 1px 1px 1px;
+					border-color: var(--e-global-color-052adb3);
+					color: var(--e-global-color-1af8e91);
+					background-color: var(--e-global-color-secondary);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp .jkit-mailchimp-submit svg {
+					fill: var(--e-global-color-1af8e91);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp .jkit-mailchimp-submit:hover {
+					color: var(--e-global-color-1af8e91);
+					background-color: var(--e-global-color-e219e46);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp .jkit-mailchimp-submit:hover svg {
+					fill: var(--e-global-color-1af8e91);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-f2f97db>.elementor-widget-container {
+					margin: 0px -8px 0px 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-f2f97db {
+					width: var(--container-widget-width, 550px);
+					max-width: 550px;
+					--container-widget-width: 550px;
+					--container-widget-flex-grow: 0;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-fc8c0db {
+					--display: flex;
+					--gap: 30px 30px;
+					--background-transition: 0.3s;
+					--padding-block-start: 0px;
+					--padding-block-end: 0px;
+					--padding-inline-start: 0px;
+					--padding-inline-end: 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-f66985f {
+					text-align: left;
+					width: auto;
+					max-width: auto;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-f66985f .elementor-heading-title {
+					color: var(--e-global-color-c24952c);
+					font-family: var(--e-global-typography-f69bd3e-font-family), Sans-serif;
+					font-size: var(--e-global-typography-f69bd3e-font-size);
+					font-weight: var(--e-global-typography-f69bd3e-font-weight);
+					text-transform: var(--e-global-typography-f69bd3e-text-transform);
+					font-style: var(--e-global-typography-f69bd3e-font-style);
+					text-decoration: var(--e-global-typography-f69bd3e-text-decoration);
+					line-height: var(--e-global-typography-f69bd3e-line-height);
+					letter-spacing: var(--e-global-typography-f69bd3e-letter-spacing);
+					word-spacing: var(--e-global-typography-f69bd3e-word-spacing);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-f66985f.elementor-element {
+					--align-self: flex-start;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-b6a3d37 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child) {
+					padding-bottom: calc(15px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-b6a3d37 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child) {
+					margin-top: calc(15px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-b6a3d37 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item {
+					margin-right: calc(15px/2);
+					margin-left: calc(15px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-b6a3d37 .elementor-icon-list-items.elementor-inline-items {
+					margin-right: calc(-15px/2);
+					margin-left: calc(-15px/2);
+				}
+
+				body.rtl .elementor-1037 .elementor-element.elementor-element-b6a3d37 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
+					left: calc(-15px/2);
+				}
+
+				body:not(.rtl) .elementor-1037 .elementor-element.elementor-element-b6a3d37 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
+					right: calc(-15px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-b6a3d37 .elementor-icon-list-icon i {
+					transition: color 0.3s;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-b6a3d37 .elementor-icon-list-icon svg {
+					transition: fill 0.3s;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-b6a3d37 {
+					--e-icon-list-icon-size: 14px;
+					--icon-vertical-offset: 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-b6a3d37 .elementor-icon-list-item>.elementor-icon-list-text,
+				.elementor-1037 .elementor-element.elementor-element-b6a3d37 .elementor-icon-list-item>a {
+					font-family: var(--e-global-typography-text-font-family), Sans-serif;
+					font-size: var(--e-global-typography-text-font-size);
+					font-weight: var(--e-global-typography-text-font-weight);
+					text-transform: var(--e-global-typography-text-text-transform);
+					font-style: var(--e-global-typography-text-font-style);
+					text-decoration: var(--e-global-typography-text-text-decoration);
+					line-height: var(--e-global-typography-text-line-height);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-b6a3d37 .elementor-icon-list-text {
+					color: var(--e-global-color-c24952c);
+					transition: color 0.3s;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-b6a3d37 .elementor-icon-list-item:hover .elementor-icon-list-text {
+					color: var(--e-global-color-secondary);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-533b502 {
+					--display: flex;
+					--gap: 30px 30px;
+					--background-transition: 0.3s;
+					--padding-block-start: 0px;
+					--padding-block-end: 0px;
+					--padding-inline-start: 0px;
+					--padding-inline-end: 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-919002e {
+					text-align: left;
+					width: auto;
+					max-width: auto;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-919002e .elementor-heading-title {
+					color: var(--e-global-color-c24952c);
+					font-family: var(--e-global-typography-f69bd3e-font-family), Sans-serif;
+					font-size: var(--e-global-typography-f69bd3e-font-size);
+					font-weight: var(--e-global-typography-f69bd3e-font-weight);
+					text-transform: var(--e-global-typography-f69bd3e-text-transform);
+					font-style: var(--e-global-typography-f69bd3e-font-style);
+					text-decoration: var(--e-global-typography-f69bd3e-text-decoration);
+					line-height: var(--e-global-typography-f69bd3e-line-height);
+					letter-spacing: var(--e-global-typography-f69bd3e-letter-spacing);
+					word-spacing: var(--e-global-typography-f69bd3e-word-spacing);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-919002e.elementor-element {
+					--align-self: flex-start;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-36e549e .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child) {
+					padding-bottom: calc(15px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-36e549e .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child) {
+					margin-top: calc(15px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-36e549e .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item {
+					margin-right: calc(15px/2);
+					margin-left: calc(15px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-36e549e .elementor-icon-list-items.elementor-inline-items {
+					margin-right: calc(-15px/2);
+					margin-left: calc(-15px/2);
+				}
+
+				body.rtl .elementor-1037 .elementor-element.elementor-element-36e549e .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
+					left: calc(-15px/2);
+				}
+
+				body:not(.rtl) .elementor-1037 .elementor-element.elementor-element-36e549e .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
+					right: calc(-15px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-36e549e .elementor-icon-list-icon i {
+					transition: color 0.3s;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-36e549e .elementor-icon-list-icon svg {
+					transition: fill 0.3s;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-36e549e {
+					--e-icon-list-icon-size: 14px;
+					--icon-vertical-offset: 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-36e549e .elementor-icon-list-item>.elementor-icon-list-text,
+				.elementor-1037 .elementor-element.elementor-element-36e549e .elementor-icon-list-item>a {
+					font-family: var(--e-global-typography-text-font-family), Sans-serif;
+					font-size: var(--e-global-typography-text-font-size);
+					font-weight: var(--e-global-typography-text-font-weight);
+					text-transform: var(--e-global-typography-text-text-transform);
+					font-style: var(--e-global-typography-text-font-style);
+					text-decoration: var(--e-global-typography-text-text-decoration);
+					line-height: var(--e-global-typography-text-line-height);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-36e549e .elementor-icon-list-text {
+					color: var(--e-global-color-c24952c);
+					transition: color 0.3s;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-36e549e .elementor-icon-list-item:hover .elementor-icon-list-text {
+					color: var(--e-global-color-secondary);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-098e555 {
+					--display: flex;
+					--align-items: flex-end;
+					--container-widget-width: calc((1 - var(--container-widget-flex-grow)) * 100%);
+					--gap: 30px 30px;
+					--background-transition: 0.3s;
+					--padding-block-start: 0px;
+					--padding-block-end: 0px;
+					--padding-inline-start: 0px;
+					--padding-inline-end: 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-64913eb {
+					text-align: left;
+					width: auto;
+					max-width: auto;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-64913eb .elementor-heading-title {
+					color: var(--e-global-color-c24952c);
+					font-family: var(--e-global-typography-f69bd3e-font-family), Sans-serif;
+					font-size: var(--e-global-typography-f69bd3e-font-size);
+					font-weight: var(--e-global-typography-f69bd3e-font-weight);
+					text-transform: var(--e-global-typography-f69bd3e-text-transform);
+					font-style: var(--e-global-typography-f69bd3e-font-style);
+					text-decoration: var(--e-global-typography-f69bd3e-text-decoration);
+					line-height: var(--e-global-typography-f69bd3e-line-height);
+					letter-spacing: var(--e-global-typography-f69bd3e-letter-spacing);
+					word-spacing: var(--e-global-typography-f69bd3e-word-spacing);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-64913eb.elementor-element {
+					--align-self: flex-start;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-86bf55d .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child) {
+					padding-bottom: calc(15px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-86bf55d .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child) {
+					margin-top: calc(15px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-86bf55d .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item {
+					margin-right: calc(15px/2);
+					margin-left: calc(15px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-86bf55d .elementor-icon-list-items.elementor-inline-items {
+					margin-right: calc(-15px/2);
+					margin-left: calc(-15px/2);
+				}
+
+				body.rtl .elementor-1037 .elementor-element.elementor-element-86bf55d .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
+					left: calc(-15px/2);
+				}
+
+				body:not(.rtl) .elementor-1037 .elementor-element.elementor-element-86bf55d .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
+					right: calc(-15px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-86bf55d .elementor-icon-list-icon i {
+					color: var(--e-global-color-secondary);
+					transition: color 0.3s;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-86bf55d .elementor-icon-list-icon svg {
+					fill: var(--e-global-color-secondary);
+					transition: fill 0.3s;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-86bf55d {
+					--e-icon-list-icon-size: 15px;
+					--icon-vertical-align: flex-start;
+					--icon-vertical-offset: 7px;
+					width: 100%;
+					max-width: 100%;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-86bf55d .elementor-icon-list-icon {
+					padding-right: 7px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-86bf55d .elementor-icon-list-item>.elementor-icon-list-text,
+				.elementor-1037 .elementor-element.elementor-element-86bf55d .elementor-icon-list-item>a {
+					font-family: var(--e-global-typography-text-font-family), Sans-serif;
+					font-size: var(--e-global-typography-text-font-size);
+					font-weight: var(--e-global-typography-text-font-weight);
+					text-transform: var(--e-global-typography-text-text-transform);
+					font-style: var(--e-global-typography-text-font-style);
+					text-decoration: var(--e-global-typography-text-text-decoration);
+					line-height: var(--e-global-typography-text-line-height);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-86bf55d .elementor-icon-list-text {
+					color: var(--e-global-color-c24952c);
+					transition: color 0.3s;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-86bf55d .elementor-icon-list-item:hover .elementor-icon-list-text {
+					color: var(--e-global-color-secondary);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-d9d9d07 {
+					text-align: right;
+					width: auto;
+					max-width: auto;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-d9d9d07 img {
+					width: 85%;
+					opacity: 0.17;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-d9d9d07>.elementor-widget-container {
+					margin: -30px 0px 0px 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-d9d9d07.elementor-element {
+					--align-self: flex-end;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-be5adbc {
+					--display: flex;
+					--flex-direction: row;
+					--container-widget-width: initial;
+					--container-widget-height: 100%;
+					--container-widget-flex-grow: 1;
+					--container-widget-align-self: stretch;
+					--justify-content: space-between;
+					--background-transition: 0.3s;
+					border-style: solid;
+					--border-style: solid;
+					border-width: 1px 0px 0px 0px;
+					--border-block-start-width: 1px;
+					--border-inline-end-width: 0px;
+					--border-block-end-width: 0px;
+					--border-inline-start-width: 0px;
+					border-color: #FFFFFF33;
+					--border-color: #FFFFFF33;
+					--padding-block-start: 30px;
+					--padding-block-end: 0px;
+					--padding-inline-start: 0px;
+					--padding-inline-end: 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-be5adbc,
+				.elementor-1037 .elementor-element.elementor-element-be5adbc::before {
+					--border-transition: 0.3s;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-be5adbc.e-con {
+					--align-self: center;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-66d14e0 {
+					color: var(--e-global-color-10354ca);
+					font-family: var(--e-global-typography-9cc991e-font-family), Sans-serif;
+					font-size: var(--e-global-typography-9cc991e-font-size);
+					font-weight: var(--e-global-typography-9cc991e-font-weight);
+					text-transform: var(--e-global-typography-9cc991e-text-transform);
+					font-style: var(--e-global-typography-9cc991e-font-style);
+					text-decoration: var(--e-global-typography-9cc991e-text-decoration);
+					line-height: var(--e-global-typography-9cc991e-line-height);
+					letter-spacing: var(--e-global-typography-9cc991e-letter-spacing);
+					word-spacing: var(--e-global-typography-9cc991e-word-spacing);
+					width: auto;
+					max-width: auto;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-bb1f30c .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child) {
+					padding-bottom: calc(55px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-bb1f30c .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child) {
+					margin-top: calc(55px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-bb1f30c .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item {
+					margin-right: calc(55px/2);
+					margin-left: calc(55px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-bb1f30c .elementor-icon-list-items.elementor-inline-items {
+					margin-right: calc(-55px/2);
+					margin-left: calc(-55px/2);
+				}
+
+				body.rtl .elementor-1037 .elementor-element.elementor-element-bb1f30c .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
+					left: calc(-55px/2);
+				}
+
+				body:not(.rtl) .elementor-1037 .elementor-element.elementor-element-bb1f30c .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
+					right: calc(-55px/2);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-bb1f30c .elementor-icon-list-icon i {
+					transition: color 0.3s;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-bb1f30c .elementor-icon-list-icon svg {
+					transition: fill 0.3s;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-bb1f30c {
+					--e-icon-list-icon-size: 14px;
+					--icon-vertical-offset: 0px;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-bb1f30c .elementor-icon-list-item>.elementor-icon-list-text,
+				.elementor-1037 .elementor-element.elementor-element-bb1f30c .elementor-icon-list-item>a {
+					font-family: var(--e-global-typography-9cc991e-font-family), Sans-serif;
+					font-size: var(--e-global-typography-9cc991e-font-size);
+					font-weight: var(--e-global-typography-9cc991e-font-weight);
+					text-transform: var(--e-global-typography-9cc991e-text-transform);
+					font-style: var(--e-global-typography-9cc991e-font-style);
+					text-decoration: var(--e-global-typography-9cc991e-text-decoration);
+					line-height: var(--e-global-typography-9cc991e-line-height);
+					letter-spacing: var(--e-global-typography-9cc991e-letter-spacing);
+					word-spacing: var(--e-global-typography-9cc991e-word-spacing);
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-bb1f30c .elementor-icon-list-text {
+					color: var(--e-global-color-10354ca);
+					transition: color 0.3s;
+				}
+
+				.elementor-1037 .elementor-element.elementor-element-bb1f30c .elementor-icon-list-item:hover .elementor-icon-list-text {
+					color: var(--e-global-color-secondary);
+				}
+
+				@media(min-width:768px) {
+					.elementor-1037 .elementor-element.elementor-element-987f021 {
+						--width: 100%;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-420e7cb {
+						--width: 90%;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-4b34925 {
+						--width: 100%;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-fc8c0db {
+						--width: 30%;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-533b502 {
+						--width: 30%;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-098e555 {
+						--width: 32%;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-be5adbc {
+						--width: 99%;
+					}
+				}
+
+				@media(max-width:1024px) and (min-width:768px) {
+					.elementor-1037 .elementor-element.elementor-element-420e7cb {
+						--width: 95%;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-be5adbc {
+						--width: 97%;
+					}
+				}
+
+				@media(max-width:1024px) {
+					.elementor-1037 .elementor-element.elementor-element-987f021 {
+						--padding-block-start: 130px;
+						--padding-block-end: 30px;
+						--padding-inline-start: 0px;
+						--padding-inline-end: 0px;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-2414e3f {
+						--flex-wrap: wrap;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-4b34925 {
+						--margin-block-start: 0px;
+						--margin-block-end: 40px;
+						--margin-inline-start: 0px;
+						--margin-inline-end: 0px;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp .jkit-form-control {
+						font-size: var(--e-global-typography-text-font-size);
+						line-height: var(--e-global-typography-text-line-height);
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp.style-inline .jkit-input-wrapper:not(.jkit-submit-input-holder) {
+						-webkit-box-flex: 70%;
+						-ms-flex: 0 0 70%;
+						flex: 0 0 70%;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp .jkit-form-control::placeholder {
+						font-size: var(--e-global-typography-text-font-size);
+						line-height: var(--e-global-typography-text-line-height);
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp .jkit-mailchimp-submit {
+						font-size: var(--e-global-typography-37dfe24-font-size);
+						line-height: var(--e-global-typography-37dfe24-line-height);
+						letter-spacing: var(--e-global-typography-37dfe24-letter-spacing);
+						word-spacing: var(--e-global-typography-37dfe24-word-spacing);
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-f2f97db {
+						width: 100%;
+						max-width: 100%;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-be5adbc {
+						--align-items: center;
+						--container-widget-width: calc((1 - var(--container-widget-flex-grow)) * 100%);
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-be5adbc.e-con {
+						--align-self: center;
+					}
+				}
+
+				@media(max-width:767px) {
+					.elementor-1037 .elementor-element.elementor-element-987f021 {
+						--width: 100%;
+						--padding-block-start: 120px;
+						--padding-block-end: 20px;
+						--padding-inline-start: 0px;
+						--padding-inline-end: 0px;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-420e7cb {
+						--width: 96%;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-2414e3f {
+						--width: 96%;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-e225d31 {
+						--container-widget-width: 190px;
+						--container-widget-flex-grow: 0;
+						width: var(--container-widget-width, 190px);
+						max-width: 190px;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-fb8bb8a {
+						--container-widget-width: 188px;
+						--container-widget-flex-grow: 0;
+						width: var(--container-widget-width, 188px);
+						max-width: 188px;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp .jkit-form-control {
+						font-size: var(--e-global-typography-text-font-size);
+						line-height: var(--e-global-typography-text-line-height);
+						padding: 18px 25px 20px 25px;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp.style-inline .jkit-input-wrapper:not(.jkit-submit-input-holder) {
+						-webkit-box-flex: 100%;
+						-ms-flex: 0 0 100%;
+						flex: 0 0 100%;
+						margin-right: 0px;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp .jkit-input-wrapper:not(.jkit-submit-input-holder) {
+						margin-bottom: 20px;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp .jkit-form-control::placeholder {
+						font-size: var(--e-global-typography-text-font-size);
+						line-height: var(--e-global-typography-text-line-height);
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp .jkit-mailchimp-submit {
+						font-size: var(--e-global-typography-37dfe24-font-size);
+						line-height: var(--e-global-typography-37dfe24-line-height);
+						letter-spacing: var(--e-global-typography-37dfe24-letter-spacing);
+						word-spacing: var(--e-global-typography-37dfe24-word-spacing);
+						padding: 15px 30px 17px 30px;
+						color: var(--e-global-color-1af8e91);
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp.style-full .jkit-mailchimp-submit {
+						width: 100%;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp.style-inline .jkit-submit-input-holder {
+						-webkit-box-flex: 100%;
+						-ms-flex: 0 0 100%;
+						flex: 0 0 100%;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp .jkit-mailchimp-submit svg {
+						fill: var(--e-global-color-1af8e91);
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-f2f97db>.elementor-widget-container {
+						margin: 0px 0px 0px 0px;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-fc8c0db {
+						--margin-block-start: 0px;
+						--margin-block-end: 20px;
+						--margin-inline-start: 0px;
+						--margin-inline-end: 0px;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-533b502 {
+						--margin-block-start: 0px;
+						--margin-block-end: 20px;
+						--margin-inline-start: 0px;
+						--margin-inline-end: 0px;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-d9d9d07 {
+						text-align: center;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-d9d9d07>.elementor-widget-container {
+						margin: 40px 0px 0px 0px;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-d9d9d07.elementor-element {
+						--align-self: flex-start;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-be5adbc {
+						--width: 96%;
+						--padding-block-start: 20px;
+						--padding-block-end: 0px;
+						--padding-inline-start: 0px;
+						--padding-inline-end: 0px;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-66d14e0 {
+						width: 100%;
+						max-width: 100%;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-bb1f30c {
+						width: 100%;
+						max-width: 100%;
+					}
+
+					.elementor-1037 .elementor-element.elementor-element-bb1f30c.elementor-element {
+						--align-self: center;
+					}
+				}
+
+				@media (max-width: 767px) {
+					.elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp.style-inline .jkit-form-wrapper.extra-fields .jkit-submit-input-holder {
+						-webkit-box-flex: 0;
+						-ms-flex: 0 0 100%;
+						flex: 0 0 100%;
+						max-width: 100%;
+					}
+				}
+
+				@media (max-width: 767px) {
+					.elementor-element.elementor-element-f2f97db .jeg-elementor-kit.jkit-mailchimp.jeg-elementor-kit.jkit-mailchimp.style-inline .jkit-form-wrapper.extra-fields .jkit-input-wrapper:nth-last-child(2) {
+						margin-right: 0 !important;
+					}
+				}
+			</style>
+			<div data-elementor-type="page" data-elementor-id="1037" class="elementor elementor-1037">
+				<div class="elementor-element elementor-element-987f021 e-con-full e-flex e-con e-parent"
+					data-id="987f021" data-element_type="container"
+					data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}"
+					data-core-v316-plus="true">
+					<div class="elementor-element elementor-element-420e7cb e-con-full e-flex e-con e-child"
+						data-id="420e7cb" data-element_type="container"
+						data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+						<div class="elementor-element elementor-element-2414e3f e-con-full e-flex e-con e-child"
+							data-id="2414e3f" data-element_type="container"
+							data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+							<div class="elementor-element elementor-element-4b34925 e-con-full e-flex e-con e-child"
+								data-id="4b34925" data-element_type="container"
+								data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+								<div class="elementor-element elementor-element-e225d31 elementor-widget__width-initial elementor-widget elementor-widget-image"
+									data-id="e225d31" data-element_type="widget" data-widget_type="image.default">
+									<div class="elementor-widget-container">
+										<img width="800" height="139"
+											src="../wp-content/uploads/sites/421/2023/10/logo-agroponix-white-1024x178.png"
+											class="attachment-large size-large wp-image-799" alt decoding="async"
+											loading="lazy"
+											srcset="https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/logo-agroponix-white-1024x178.png 1024w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/logo-agroponix-white-e1697700279225-300x52.png 300w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/logo-agroponix-white-e1697700279225-768x133.png 768w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/logo-agroponix-white-1536x268.png 1536w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/logo-agroponix-white-2048x357.png 2048w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/logo-agroponix-white-e1697700279225.png 800w"
+											sizes="(max-width: 800px) 100vw, 800px" />
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-fb8bb8a elementor-widget__width-initial elementor-widget elementor-widget-jkit_heading"
+									data-id="fb8bb8a" data-element_type="widget"
+									data-widget_type="jkit_heading.default">
+									<div class="elementor-widget-container">
+										<div
+											class="jeg-elementor-kit jkit-heading  align-left align-tablet- align-mobile- jeg_module_1159_11_65596f3d66bdc">
+											<div class="heading-section-title  display-inline-block">
+												<h2 class="heading-title">Subscribe Our Newsletter</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-d0e5bd9 elementor-widget__width-auto elementor-widget elementor-widget-text-editor"
+									data-id="d0e5bd9" data-element_type="widget" data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										Expect a friendly letter from us once a week. No spam. </div>
+								</div>
+								<div class="elementor-element elementor-element-f2f97db elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-jkit_mailchimp"
+									data-id="f2f97db" data-element_type="widget"
+									data-widget_type="jkit_mailchimp.default">
+									<div class="elementor-widget-container">
+										<div
+											class="jeg-elementor-kit jkit-mailchimp style-inline jeg_module_1159_12_65596f3d69ee7">
+											<form method="post" class="jkit-mailchimp-form" data-listed
+												data-success-message="Successfully listed this email"
+												data-error-message="Something went wrong">
+												<div class="jkit-mailchimp-message"></div>
+												<div class="jkit-form-wrapper email-form">
+													<div
+														class="jkit-mailchimp-email jkit-input-wrapper input-container">
+														<div class="jkit-form-group">
+															<div class="jkit-input-element-container jkit-input-group">
+																<input type="email" name="email"
+																	class="jkit-email jkit-form-control "
+																	placeholder="Enter your email address" required>
+															</div>
+														</div>
+													</div>
+													<div class="jkit-submit-input-holder jkit-input-wrapper">
+														<button type="submit"
+															class="jkit-mailchimp-submit position-before"
+															name="jkit-mailchimp">
+															Subscribe
+														</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-fc8c0db e-con-full e-flex e-con e-child"
+								data-id="fc8c0db" data-element_type="container"
+								data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+								<div class="elementor-element elementor-element-f66985f elementor-widget__width-auto elementor-widget elementor-widget-heading"
+									data-id="f66985f" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h5 class="elementor-heading-title elementor-size-default">Quick Link</h5>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-b6a3d37 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+									data-id="b6a3d37" data-element_type="widget" data-widget_type="icon-list.default">
+									<div class="elementor-widget-container">
+										<ul class="elementor-icon-list-items">
+											<li class="elementor-icon-list-item">
+												<a href="#">
+													<span class="elementor-icon-list-text">Home</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+													<span class="elementor-icon-list-text">About</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+													<span class="elementor-icon-list-text">Services</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+													<span class="elementor-icon-list-text">Pricing</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+													<span class="elementor-icon-list-text">Blog</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-533b502 e-con-full e-flex e-con e-child"
+								data-id="533b502" data-element_type="container"
+								data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+								<div class="elementor-element elementor-element-919002e elementor-widget__width-auto elementor-widget elementor-widget-heading"
+									data-id="919002e" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h5 class="elementor-heading-title elementor-size-default">Follow Us</h5>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-36e549e elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+									data-id="36e549e" data-element_type="widget" data-widget_type="icon-list.default">
+									<div class="elementor-widget-container">
+										<ul class="elementor-icon-list-items">
+											<li class="elementor-icon-list-item">
+												<a href="#">
+													<span class="elementor-icon-list-text">Facebook</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+													<span class="elementor-icon-list-text">Twitter</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+													<span class="elementor-icon-list-text">Instagram</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+													<span class="elementor-icon-list-text">LinkedIn</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-098e555 e-con-full e-flex e-con e-child"
+								data-id="098e555" data-element_type="container"
+								data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+								<div class="elementor-element elementor-element-64913eb elementor-widget__width-auto elementor-widget elementor-widget-heading"
+									data-id="64913eb" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h5 class="elementor-heading-title elementor-size-default">Contact Us</h5>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-86bf55d elementor-widget__width-inherit elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+									data-id="86bf55d" data-element_type="widget" data-widget_type="icon-list.default">
+									<div class="elementor-widget-container">
+										<ul class="elementor-icon-list-items">
+											<li class="elementor-icon-list-item">
+												<a href="#">
+													<span class="elementor-icon-list-icon">
+														<i aria-hidden="true" class="fas fa-phone-alt"></i> </span>
+													<span class="elementor-icon-list-text">+12 345 678 9010</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+													<span class="elementor-icon-list-icon">
+														<i aria-hidden="true" class="fas fa-envelope"></i> </span>
+													<span class="elementor-icon-list-text">support@agroponix.com</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+													<span class="elementor-icon-list-icon">
+														<i aria-hidden="true" class="fas fa-map-marker-alt"></i> </span>
+													<span class="elementor-icon-list-text">Jl. Dr. Ir Soekarno No. 99x
+														Tabanan - Bali</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-d9d9d07 elementor-widget__width-auto elementor-widget elementor-widget-image"
+							data-id="d9d9d07" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img width="382" height="186"
+									src="../wp-content/uploads/sites/421/2023/10/vegetable.png"
+									class="attachment-large size-large wp-image-916" alt decoding="async" loading="lazy"
+									srcset="https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/vegetable.png 382w, https://templatekit.jegtheme.com/agroponix/wp-content/uploads/sites/421/2023/10/vegetable-300x146.png 300w"
+									sizes="(max-width: 382px) 100vw, 382px" />
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-be5adbc e-con-full e-flex e-con e-child"
+							data-id="be5adbc" data-element_type="container"
+							data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+							<div class="elementor-element elementor-element-66d14e0 elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+								data-id="66d14e0" data-element_type="widget" data-widget_type="text-editor.default">
+								<div class="elementor-widget-container">
+									Copyright © 2023 Jegtheme. All rights reserved. </div>
+							</div>
+							<div class="elementor-element elementor-element-bb1f30c elementor-icon-list--layout-inline elementor-align-right elementor-mobile-align-center elementor-widget-mobile__width-inherit elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+								data-id="bb1f30c" data-element_type="widget" data-widget_type="icon-list.default">
+								<div class="elementor-widget-container">
+									<ul class="elementor-icon-list-items elementor-inline-items">
+										<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="#">
+												<span class="elementor-icon-list-text">Terms & Conditions</span>
+											</a>
+										</li>
+										<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="#">
+												<span class="elementor-icon-list-text">Privacy Policy</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<link rel="stylesheet" id="elementor-post-1034-css" href="../assets/css/post-10349e12.css" media="all" />
+	<link rel="stylesheet" id="sweetalert2-css"
+		href="../assets/plugin/jeg-elementor-kit/assets/js/sweetalert2/sweetalert2.min430c.css" media="all" />
+	<link rel="stylesheet" id="tiny-slider-css"
+		href="../assets/plugin/jeg-elementor-kit/assets/js/tiny-slider/tiny-sliderf342.css" media="all" />
+	<link rel="stylesheet" id="elementor-post-1037-css" href="../assets/css/post-103775b6.css" media="all" />
+	<script src="../assets/dist/themes/hello-elementor/assets/js/hello-frontend.min8a54.js"
+		id="hello-theme-frontend-js"></script>
+	<script src="../assets/plugin/elementor/assets/js/webpack.runtime.minafc7.js"
+		id="elementor-webpack-runtime-js"></script>
+	<script src="../assets/plugin/elementor/assets/js/frontend-modules.minafc7.js"
+		id="elementor-frontend-modules-js"></script>
+	<script src="../assets/js/jquery/ui/core.min3f14.js" id="jquery-ui-core-js"></script>
+	<script id="elementor-frontend-js-before">
+		var elementorFrontendConfig = {
+			environmentMode: { edit: !1, wpPreview: !1, isScriptDebug: !1 },
+			i18n: {
+				shareOnFacebook: "Share on Facebook",
+				shareOnTwitter: "Share on Twitter",
+				pinIt: "Pin it",
+				download: "Download",
+				downloadImage: "Download image",
+				fullscreen: "Fullscreen",
+				zoom: "Zoom",
+				share: "Share",
+				playVideo: "Play Video",
+				previous: "Previous",
+				next: "Next",
+				close: "Close",
+				a11yCarouselWrapperAriaLabel:
+					"Carousel | Horizontal scrolling: Arrow Left & Right",
+				a11yCarouselPrevSlideMessage: "Previous slide",
+				a11yCarouselNextSlideMessage: "Next slide",
+				a11yCarouselFirstSlideMessage: "This is the first slide",
+				a11yCarouselLastSlideMessage: "This is the last slide",
+				a11yCarouselPaginationBulletMessage: "Go to slide",
+			},
+			is_rtl: !1,
+			breakpoints: { xs: 0, sm: 480, md: 768, lg: 1025, xl: 1440, xxl: 1600 },
+			responsive: {
+				breakpoints: {
+					mobile: {
+						label: "Mobile Portrait",
+						value: 767,
+						default_value: 767,
+						direction: "max",
+						is_enabled: !0,
+					},
+					mobile_extra: {
+						label: "Mobile Landscape",
+						value: 880,
+						default_value: 880,
+						direction: "max",
+						is_enabled: !1,
+					},
+					tablet: {
+						label: "Tablet Portrait",
+						value: 1024,
+						default_value: 1024,
+						direction: "max",
+						is_enabled: !0,
+					},
+					tablet_extra: {
+						label: "Tablet Landscape",
+						value: 1200,
+						default_value: 1200,
+						direction: "max",
+						is_enabled: !1,
+					},
+					laptop: {
+						label: "Laptop",
+						value: 1366,
+						default_value: 1366,
+						direction: "max",
+						is_enabled: !1,
+					},
+					widescreen: {
+						label: "Widescreen",
+						value: 2400,
+						default_value: 2400,
+						direction: "min",
+						is_enabled: !1,
+					},
+				},
+			},
+			version: "3.16.4",
+			is_static: !1,
+			experimentalFeatures: {
+				e_dom_optimization: !0,
+				e_optimized_assets_loading: !0,
+				e_optimized_css_loading: !0,
+				additional_custom_breakpoints: !0,
+				container: !0,
+				e_swiper_latest: !0,
+				"hello-theme-header-footer": !0,
+				"landing-pages": !0,
+				e_global_styleguide: !0,
+			},
+			urls: {
+				assets:
+					"https:\/\/templatekit.jegtheme.com\/SIKAPADI\/wp-content\/plugins\/elementor\/assets\/",
+			},
+			swiperClass: "swiper",
+			settings: { page: [], editorPreferences: [] },
+			kit: {
+				active_breakpoints: ["viewport_mobile", "viewport_tablet"],
+				global_image_lightbox: "yes",
+				lightbox_enable_counter: "yes",
+				lightbox_enable_fullscreen: "yes",
+				lightbox_enable_zoom: "yes",
+				lightbox_enable_share: "yes",
+				lightbox_title_src: "title",
+				lightbox_description_src: "description",
+				hello_header_logo_type: "title",
+				hello_header_menu_layout: "horizontal",
+				hello_footer_logo_type: "logo",
+			},
+			post: {
+				id: 6,
+				title:
+					"SIKAPADI%20%E2%80%93%20Hydroponic%20%26%20Agriculture%20Elementor%20Template%20Kit",
+				excerpt: "",
+				featuredImage: !1,
+			},
+		};
+	</script>
+	<script src="../assets/plugin/elementor/assets/js/frontend.minafc7.js" id="elementor-frontend-js"></script>
+	<script id="elementor-frontend-js-after">
+		var jkit_ajax_url = "indexe2f2.html?jkit-ajax-request=jkit_elements",
+			jkit_nonce = "87391e2e07";
+	</script>
+	<script src="../assets/plugin/jeg-elementor-kit/assets/js/elements/sticky-element61da.js"
+		id="jkit-sticky-element-js"></script>
+	<script src="../assets/plugin/jeg-elementor-kit/assets/js/elements/nav-menu61da.js"
+		id="jkit-element-navmenu-js"></script>
+	<script src="../assets/plugin/jeg-elementor-kit/assets/js/elements/fun-fact61da.js"
+		id="jkit-element-funfact-js"></script>
+	<script src="../assets/plugin/jeg-elementor-kit/assets/js/elements/video-button61da.js"
+		id="jkit-element-videobutton-js"></script>
+	<script src="../assets/plugin/jeg-elementor-kit/assets/js/sweetalert2/sweetalert2.min430c.js"
+		id="sweetalert2-js"></script>
+	<script src="../assets/plugin/jeg-elementor-kit/assets/js/elements/team61da.js" id="jkit-element-team-js"></script>
+	<script src="../assets/plugin/jeg-elementor-kit/assets/js/tiny-slider/tiny-sliderf342.js"
+		id="tiny-slider-js"></script>
+	<script id="jkit-element-pagination-js-extra">
+		var jkit_element_pagination_option = {
+			element_prefix: "jkit_element_ajax_",
+		};
+	</script>
+	<script src="../assets/plugin/jeg-elementor-kit/assets/js/elements/post-pagination61da.js"
+		id="jkit-element-pagination-js"></script>
+	<script src="../assets/plugin/jeg-elementor-kit/assets/js/elements/accordion61da.js"
+		id="jkit-element-accordion-js"></script>
+	<script src="../assets/plugin/jeg-elementor-kit/assets/js/elements/mailchimp61da.js"
+		id="jkit-element-mailchimp-js"></script>
+	<script src="../assets/js/upload.js"></script>
+</body>
+
+</html>

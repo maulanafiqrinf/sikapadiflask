@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Aplikasi Deteksi Penyakit Tanaman Padi" /> 
+    <meta name="keywords" content="SIkapadi,Klasifikasi,Tanaman Padi" /> 
+    <meta name="author" content="Maulana Fiqri" /> 
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <link rel="pingback" href="xmlrpc.html" />
+    <title>SIKAPADI</title>
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="generator" content="Elementor 3.16.4" />
+    <link rel="apple-touch-icon" href="../static/assets/images/logo/logodoang (1).png">
+
+    <link rel="stylesheet" id="jkit-elements-main-css"
+        href="static/assets/plugin/jeg-elementor-kit/assets/css/elements/main61da.css?ver=2.6.2" media="all" />
+    <link rel="stylesheet" id="classic-theme-styles-css"
+        href="static/assets/css/classic-themes.min68b3.css" media="all" />
+    <link rel="stylesheet" id="allow-webp-image-css"
+        href="static/assets/plugin/allow-webp-image/public/css/allow-webp-image-publicf269.css?ver=1.0.1"
+        media="all" />
+    <link rel="stylesheet" id="template-kit-export-css"
+        href="static/assets/plugin/template-kit-export/public/assets/css/template-kit-export-public.min365c.css?ver=1.0.21"
+        media="all" />
+    <link rel="stylesheet" id="elementor-icons-css"
+        href="static/assets/plugin/elementor/assets/lib/eicons/css/elementor-icons.min192d.css?ver=5.23.0"
+        media="all" />
+    <link rel="stylesheet" id="elementor-frontend-css"
+        href="static/assets/plugin/elementor/assets/css/frontend-lite.minafc7.css?ver=3.16.4" media="all" />
+    <link rel="stylesheet" id="swiper-css"
+        href="static/assets/plugin/elementor/assets/lib/swiper/v8/css/swiper.min94a4.css?ver=8.4.5"
+        media="all" />
+    <link rel="stylesheet" id="elementor-post-3-css"
+        href="static/assets/css/post-3c65a.css?ver=1698197321" media="all" />
+    <link rel="stylesheet" id="elementor-global-css"
+        href="static/assets/css/global7b83.css?ver=1698197322" media="all" />
+    <link rel="stylesheet" id="elementor-post-1340-css"
+        href="static/assets/css/post-1340d2b0.css?ver=1698199153" media="all" />
+    <link rel="stylesheet" id="font-awesome-5-all-css"
+        href="static/assets/plugin/elementor/assets/lib/font-awesome/css/all.minafc7.css?ver=3.16.4"
+        media="all" />
+    <link rel="stylesheet" id="font-awesome-4-shim-css"
+        href="static/assets/plugin/elementor/assets/lib/font-awesome/css/v4-shims.minafc7.css?ver=3.16.4"
+        media="all" />
+    <link rel="stylesheet" id="hello-elementor-css"
+        href="static/assets/dist/themes/hello-elementor/style.minc141.css?ver=2.6.1" media="all" />
+    <link rel="stylesheet" id="hello-elementor-theme-style-css"
+        href="static/assets/dist/themes/hello-elementor/theme.minc141.css?ver=2.6.1" media="all" />
+    <link rel="stylesheet" id="google-fonts-1-css"
+        href="https://fonts.googleapis.com/css?family=Krona+One%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMandali%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.1.4"
+        media="all" />
+    <link rel="stylesheet" id="elementor-icons-jkiticon-css"
+        href="static/assets/plugin/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon61da.css?ver=2.6.2"
+        media="all" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <script src="../static/wp-includes/js/jquery/jquery.mina7a0.js?ver=3.6.1" id="jquery-core-js"></script>
+    <script src="../static/wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2" id="jquery-migrate-js"></script>
+    <script src="static/assets/plugin/allow-webp-image/public/js/allow-webp-image-publicf269.js?ver=1.0.1"
+        id="allow-webp-image-js"></script>
+    <script
+        src="static/assets/plugin/template-kit-export/public/assets/js/template-kit-export-public.min365c.js?ver=1.0.21"
+        id="template-kit-export-js"></script>
+    <script src="static/assets/plugin/elementor/assets/lib/font-awesome/js/v4-shims.minafc7.js?ver=3.16.4"
+        id="font-awesome-4-shim-js"></script>
+</head>
+
+<body class="page-template page-template-elementor_header_footer page page-id-1340 jkit-color-scheme elementor-default elementor-template-full-width elementor-kit-3 elementor-page elementor-page-1340">
+    <div id="page" class="jkit-template  site">
+        {% include 'main/navbar.html' %}  
+        <div data-elementor-type="wp-page" data-elementor-id="1340" class="elementor elementor-1340">
+            <div class="elementor-element elementor-element-c7ba288 e-con-full e-flex e-con e-parent" data-id="c7ba288"
+                data-element_type="container"
+                data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}"
+                data-core-v316-plus="true">
+                <div class="elementor-element elementor-element-2f1b122 e-con-full e-flex e-con e-child"
+                    data-id="2f1b122" data-element_type="container"
+                    data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+                    <div class="elementor-element elementor-element-3939f3a elementor-widget__width-auto e-transform elementor-widget elementor-widget-heading"
+                        data-id="3939f3a" data-element_type="widget"
+                        data-settings="{&quot;_transform_rotateZ_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-5,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
+                        data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                            <style> .elementor-heading-title {padding: 0;margin: 0;line-height: 1 }.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {color: inherit;font-size: inherit;line-height: inherit }.elementor-widget-heading .elementor-heading-title.elementor-size-small {font-size: 15px }.elementor-widget-heading .elementor-heading-title.elementor-size-medium {font-size: 19px }.elementor-widget-heading .elementor-heading-title.elementor-size-large {font-size: 29px }.elementor-widget-heading .elementor-heading-title.elementor-size-xl {font-size: 39px }.elementor-widget-heading .elementor-heading-title.elementor-size-xxl {font-size: 59px }</style>
+                            <h6 class="elementor-heading-title elementor-size-default">Hubungi Kami</h6>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-4afc64b elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-jkit_heading"
+                        data-id="4afc64b" data-element_type="widget" data-widget_type="jkit_heading.default">
+                        <div class="elementor-widget-container">
+                            <div
+                                class="jeg-elementor-kit jkit-heading  align-center align-tablet- align-mobile- jeg_module_1340_1_65596f42a21b7">
+                                <div class="heading-section-title  display-inline-block">
+                                    <h1 class="heading-title">Jika Ada Pertanyaan</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-6fbefba elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
+                        data-id="6fbefba" data-element_type="widget" data-widget_type="text-editor.default">
+                        <div class="elementor-widget-container">
+                            <style> .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {background-color: #69727d;color: #fff }.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {color: #69727d;border: 3px solid;background-color: transparent }.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {margin-top: 8px }.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {width: 1em;height: 1em }.elementor-widget-text-editor .elementor-drop-cap {float: left;text-align: center;line-height: 1;font-size: 50px }.elementor-widget-text-editor .elementor-drop-cap-letter {display: inline-block }</style>
+                            <p>Waktu Respon Senin &#8211;
+                                Jum'at (8:00 &#8211; 16:00)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="elementor-element elementor-element-d653626 e-con-full e-flex e-con e-parent" data-id="d653626"
+                data-element_type="container"
+                data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}"
+                data-core-v316-plus="true">
+                <div class="elementor-element elementor-element-a5dd1fb e-flex e-con-boxed e-con e-child"
+                    data-id="a5dd1fb" data-element_type="container"
+                    data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+                    <div class="e-con-inner">
+                        <div class="elementor-element elementor-element-343d5e8 e-con-full e-flex e-con e-child"
+                            data-id="343d5e8" data-element_type="container"
+                            data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+                            <div class="elementor-element elementor-element-8c284b8 e-con-full e-flex e-con e-child"
+                                data-id="8c284b8" data-element_type="container"
+                                data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+                                <div class="elementor-element elementor-element-bb6cf2d elementor-widget elementor-widget-metform"
+                                    data-id="bb6cf2d" data-element_type="widget" data-widget_type="metform.default">
+                                    <div class="elementor-widget-container">
+                                        <div id="mf-response-props-id-1354" data-previous-steps-style
+                                            data-editswitchopen data-response_type="alert"
+                                            data-erroricon="fas fa-exclamation-triangle" data-successicon="fas fa-check"
+                                            data-messageposition="top" class="   mf-scroll-top-no">
+                                            <div class="formpicker_warper formpicker_warper_editable"
+                                                data-metform-formpicker-key="1354">
+                                                <div class="col-6">
+                                                    <form id="contactForm"
+                                                        style="margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; margin-top: 10px;">
+                                                        <div class="row">
+                                                            <label for="firstName"
+                                                                style="display: block; margin-bottom: 5px; color: #ffffff;">Nama:</label>
+                                                            <input type="text" id="firstName"
+                                                                style="width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #ccc; border-radius: 5px;"
+                                                                required>
+
+                                                            <label for="email"
+                                                                style="display: block; margin-bottom: 5px; color: #ffffff;">Email:</label>
+                                                            <input type="email" id="email"
+                                                                style="width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #ccc; border-radius: 5px;"
+                                                                required>
+
+                                                            <label for="subject"
+                                                                style="display: block; margin-bottom: 5px; color: #ffffff;">Subjek:</label>
+                                                            <input type="text" id="subject"
+                                                                style="width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #ccc; border-radius: 5px;"
+                                                                required>
+
+                                                            <label for="comments"
+                                                                style="display: block; margin-bottom: 5px; color: #ffffff;">Pertanyaan/Komentar:</label>
+                                                            <textarea id="comments"
+                                                                style="width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #ccc; border-radius: 5px;"
+                                                                rows="4" required>
+
+															</textarea>
+
+                                                            <div style="text-align: right;">
+                                                                <button type="button"
+                                                                    style="display: inline-block; width: 30%; padding: 10px; background-color: #4caf50; color: white; border: none; border-radius: 5px; cursor: pointer;"
+                                                                    onclick="submitForm()">Kirim</button>
+                                                            </div>
+                                                    </form>
+                                                    <script>function submitForm(){var firstName=document.getElementById('firstName').value;var email=document.getElementById('email').value;var subject=document.getElementById('subject').value;var comments=document.getElementById('comments').value;var whatsappNumber='62895627552055';var whatsappMessage='Sikapadi:\n'
+                                                        +'Nama: '+firstName+'\n'
+                                                        +'Email: '+email+'\n'
+                                                        +'Topik: '+subject+'\n'
+                                                        +'Pertanyaan/Komentar: '+comments;var whatsappUrl='https://wa.me/'+whatsappNumber+'?text='+encodeURIComponent(whatsappMessage);window.open(whatsappUrl,'_blank');console.log('Form submission successful!');}</script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-20d35d9 e-con-full e-flex e-con e-child"
+                            data-id="20d35d9" data-element_type="container"
+                            data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+                            <div class="elementor-element elementor-element-40f55aa e-flex e-con-boxed e-con e-child"
+                                data-id="40f55aa" data-element_type="container"
+                                data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+                                <div class="e-con-inner">
+                                    <div class="elementor-element elementor-element-d897b7a elementor-widget__width-inherit elementor-widget elementor-widget-text-editor"
+                                        data-id="d897b7a" data-element_type="widget"
+                                        data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <p>&#8220;Tanaman padi memiliki peran krusial dalam ekonomi Indonesia.
+                                                Namun, produksi sering terhambat oleh penyakit daun, serta menyebabkan
+                                                kerugian bagi petani. Meskipun Kabupaten Tuban merupakan produsen padi
+                                                tertinggi nomor 5 di Jawa Timur pada tahun 2023, serangan penyakit daun
+                                                seringkali mengurangi produksinya. Saat ini, pendeteksian penyakit masih
+                                                dilakukan secara manual. Penelitian ini mengimplementasikan Metode CNN,
+                                                yang berpotensi signifikan dalam penanganan penyakit daun pada tanaman
+                                                padi.&#8221;</p>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-8b82031 elementor-widget elementor-widget-heading"
+                                        data-id="8b82031" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <h4 class="elementor-heading-title elementor-size-default">Maulana Fiqri
+                                                Nurul Fawaid</h4>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-24cea08 elementor-widget__width-auto elementor-widget elementor-widget-text-editor"
+                                        data-id="24cea08" data-element_type="widget"
+                                        data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <p>Developer SIKAPADI</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include 'contact/cta.html' %}  
+    </div>
+    {% include 'main/footer.html' %}  
+    </div>
+    {% include 'contact/script.html' %}  
+</body>
+
+</html>

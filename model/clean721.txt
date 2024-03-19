@@ -1,0 +1,1 @@
+{0: 'no padi', 1: 'padi bl', 2: 'padi blb', 3: 'padi bw', 4: 'padi sehat'}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Aplikasi Deteksi Penyakit Tanaman Padi" /> 
+    <meta name="keywords" content="SIkapadi,Klasifikasi,Tanaman Padi" /> 
+    <meta name="author" content="Maulana Fiqri" /> 
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <link rel="pingback" href="xmlrpc.html" />
+    <title>SIKAPADI</title>
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="generator" content="Elementor 3.16.4" />
+    <link rel="apple-touch-icon" href="../static/assets/images/logo/logodoang (1).png">
+    <!-- All Device Favicon -->
+    <link rel="icon" href="../static/assets/images/logo/logodoang (1).png">
+    <!--CSS-->
+    <link rel="stylesheet" id="elementor-post-3-css" href="static/assets/css/post-3c65a.css" media="all" />
+    <link rel="stylesheet" id="elementor-global-css" href="static/assets/css/global7b83.css" media="all" />
+    <link rel="stylesheet" id="elementor-post-6-css" href="static/assets/css/post-63986.css" media="all" />
+    <link rel="stylesheet" id="jkit-elements-main-css" href="static/assets/css/main61da.css" media="all" />
+    <!--Plugin-->
+    <link rel="stylesheet" id="template-kit-export-css"
+        href="static/assets/plugin/template-kit-export/public/assets/css/template-kit-export-public.min365c.css" media="all" />
+    <link rel="stylesheet" id="elementor-frontend-css"
+        href="static/assets/plugin/elementor/assets/css/frontend-lite.minafc7.css" media="all" />
+    <link rel="stylesheet" id="elementor-icons-jkiticon-css"
+        href="static/assets/plugin/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon61da.css" media="all" />
+    <link rel="stylesheet" id="elementor-icons-shared-0-css"
+        href="static/assets/plugin/elementor/assets/lib/font-awesome/css/fontawesome.min52d5.css" media="all" />
+    <link rel="stylesheet" id="elementor-icons-fa-solid-css"
+        href="static/assets/plugin/elementor/assets/lib/font-awesome/css/solid.min52d5.css" media="all" />
+    <!--Dist-->
+    <link rel="stylesheet" id="hello-elementor-css" href="static/assets/dist/themes/hello-elementor/style.minc141.css"
+        media="all" />
+    <!--Font-->
+    <link rel="stylesheet" id="google-fonts-1-css"
+        href="https://fonts.googleapis.com/css?family=Krona+One%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMandali%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.1.4"
+        media="all" />
+    <!--Script-->
+    <script src="static/assets/js/jquery/jquery.mina7a0.js" id="jquery-core-js"></script>
+    <script src="static/assets/js/jquery/jquery-migrate.mind617.js" id="jquery-migrate-js"></script>
+    <script src="static/assets/plugin/allow-webp-image/public/js/allow-webp-image-publicf269.js"
+        id="allow-webp-image-js"></script>
+</head>
+<body class="home page-template page-template-elementor_header_footer page page-id-6 jkit-color-scheme elementor-default elementor-template-full-width elementor-kit-3 elementor-page elementor-page-6">
+    <div id="page" class="jkit-template site">
+        <header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+            <style> .elementor-1034 .elementor-element.elementor-element-e47d0f0 {--display: flex;--flex-direction: column;--container-widget-width: calc((1 - var(--container-widget-flex-grow)) * 100%);--container-widget-height: initial;--container-widget-flex-grow: 0;--container-widget-align-self: initial;--justify-content: center;--align-items: center;--background-transition: 0.3s;--margin-block-start: 0px;--margin-block-end: -120px;--margin-inline-start: 0px;--margin-inline-end: 0px;}.elementor-1034 .elementor-element.elementor-element-7d6659f {--display: flex;--flex-direction: row;--container-widget-width: calc((1 - var(--container-widget-flex-grow)) * 100%);--container-widget-height: 100%;--container-widget-flex-grow: 1;--container-widget-align-self: stretch;--justify-content: space-between;--align-items: center;--gap: 0px 0px;--background-transition: 0.3s;--padding-block-start: 20px;--padding-block-end: 0px;--padding-inline-start: 50px;--padding-inline-end: 50px;--z-index: 98;}.elementor-1034 .elementor-element.elementor-element-e3e9fdf {width: var(--container-widget-width, 200px);max-width: 200px;--container-widget-width: 200px;--container-widget-flex-grow: 0;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu>ul, .elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper:not(.active) .jkit-menu, .elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper:not(.active) .jkit-menu>li>a {display: flex;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu {justify-content: flex-start;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .menu-item .sub-menu {left: unset;top: 100%;right: unset;bottom: unset;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .menu-item .sub-menu .menu-item .sub-menu {left: 100%;top: unset;right: unset;bottom: unset;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper {height: 80px;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li>a {font-family: var(--e-global-typography-451c75e-font-family), Sans-serif;font-size: var(--e-global-typography-451c75e-font-size);font-weight: var(--e-global-typography-451c75e-font-weight);text-transform: var(--e-global-typography-451c75e-text-transform);font-style: var(--e-global-typography-451c75e-font-style);text-decoration: var(--e-global-typography-451c75e-text-decoration);line-height: var(--e-global-typography-451c75e-line-height);letter-spacing: var(--e-global-typography-451c75e-letter-spacing);word-spacing: var(--e-global-typography-451c75e-word-spacing);margin: 0px 10px 0px 10px;color: var(--e-global-color-1af8e91);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li>a i {font-size: 14px;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li>a svg {width: 14px;fill: var(--e-global-color-1af8e91);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li:hover>a {color: var(--e-global-color-primary);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li:hover>a svg {fill: var(--e-global-color-primary);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li.current-menu-item>a, .elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li.current-menu-ancestor>a {color: var(--e-global-color-primary);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li.current-menu-item>a svg, .elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li.current-menu-ancestor>a svg {fill: var(--e-global-color-primary);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children>a i, .elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children>a svg {border-style: none;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li a {font-family: var(--e-global-typography-451c75e-font-family), Sans-serif;font-size: var(--e-global-typography-451c75e-font-size);font-weight: var(--e-global-typography-451c75e-font-weight);text-transform: var(--e-global-typography-451c75e-text-transform);font-style: var(--e-global-typography-451c75e-font-style);text-decoration: var(--e-global-typography-451c75e-text-decoration);line-height: var(--e-global-typography-451c75e-line-height);letter-spacing: var(--e-global-typography-451c75e-letter-spacing);word-spacing: var(--e-global-typography-451c75e-word-spacing);padding: 10px 10px 10px 10px;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li>a {color: var(--e-global-color-1af8e91);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li>a svg {fill: var(--e-global-color-1af8e91);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li:hover>a {color: var(--e-global-color-primary);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li:hover>a svg {fill: var(--e-global-color-primary);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li.current-menu-item>a {color: var(--e-global-color-primary);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li.current-menu-item>a svg {fill: var(--e-global-color-primary);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children .sub-menu {padding: 15px 15px 15px 15px;border-style: solid;border-width: 1px 1px 1px 1px;border-color: var(--e-global-color-c8712f7);background-color: transparent;background-image: linear-gradient(180deg, #ffffff 0%, #ffffffde 100%);border-radius: 10px 10px 10px 10px;min-width: 220px;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu {float: right;background-color: var(--e-global-color-8868c7f);border-style: none;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu:hover {background-color: var(--e-global-color-8868c7f);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu {background-color: var(--e-global-color-accent);border-style: none;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu:hover {background-color: var(--e-global-color-secondary);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-nav-site-title .jkit-nav-logo img {object-fit: cover;}.elementor-1034 .elementor-element.elementor-element-c0daf6b {width: auto;max-width: auto;}.elementor-1034 .elementor-element.elementor-element-c0daf6b.elementor-element {--align-self: flex-start;}@media (min-width: 768px) {.elementor-1034 .elementor-element.elementor-element-7d6659f {--content-width: 1810px;}}@media (max-width: 1024px) {.elementor-1034 .elementor-element.elementor-element-e47d0f0 {--margin-block-start: 40px;--margin-block-end: -95px;--margin-inline-start: 0px;--margin-inline-end: 0px;}.elementor-1034 .elementor-element.elementor-element-7d6659f {--flex-direction: row;--container-widget-width: calc((1 - var(--container-widget-flex-grow)) * 100%);--container-widget-height: 100%;--container-widget-flex-grow: 1;--container-widget-align-self: stretch;--align-items: center;--padding-block-start: 0px;--padding-block-end: 0px;--padding-inline-start: 50px;--padding-inline-end: 40px;}.elementor-1034 .elementor-element.elementor-element-7d6659f.e-con {--align-self: center;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu.break-point-mobile .jkit-menu-wrapper {background-color: var(--e-global-color-1af8e91);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu.break-point-tablet .jkit-menu-wrapper {background-color: var(--e-global-color-1af8e91);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li>a {font-size: var(--e-global-typography-451c75e-font-size);line-height: var(--e-global-typography-451c75e-line-height);letter-spacing: var(--e-global-typography-451c75e-letter-spacing);word-spacing: var(--e-global-typography-451c75e-word-spacing);margin: 0px 10px 0px 20px;padding: 10px 10px 10px 10px;color: var(--e-global-color-c24952c);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li>a svg {fill: var(--e-global-color-c24952c);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children>a i, .elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children>a svg {margin: 0px 8px 0px 0px;padding: 0px 0px 0px 0px;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li a {font-size: var(--e-global-typography-451c75e-font-size);line-height: var(--e-global-typography-451c75e-line-height);letter-spacing: var(--e-global-typography-451c75e-letter-spacing);word-spacing: var(--e-global-typography-451c75e-word-spacing);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children .sub-menu {margin: 0px 30px 0px 30px;padding: 10px 10px 10px 10px;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu i {font-size: 25px;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu svg {width: 25px;fill: var(--e-global-color-primary);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu {color: var(--e-global-color-primary);margin: 5px 0px 0px 0px;padding: 0px 0px 0px 0px;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu:hover {color: var(--e-global-color-secondary);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu:hover svg {fill: var(--e-global-color-secondary);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu {width: 24px;border-radius: 20px 20px 20px 20px;color: var(--e-global-color-primary);margin: 10px 22px 0px 0px;padding: 0px 0px 0px 0px;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu i {font-size: 13px;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu svg {width: 13px;fill: var(--e-global-color-primary);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu:hover {color: var(--e-global-color-1af8e91);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu:hover svg {fill: var(--e-global-color-1af8e91);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-nav-site-title .jkit-nav-logo img {max-width: 180px;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-nav-site-title .jkit-nav-logo {margin: 30px 0px 0px 30px;}}@media (max-width: 767px) {.elementor-1034 .elementor-element.elementor-element-e47d0f0 {--margin-block-start: 0px;--margin-block-end: -75px;--margin-inline-start: 0px;--margin-inline-end: 0px;}.elementor-1034 .elementor-element.elementor-element-7d6659f {--padding-block-start: 20px;--padding-block-end: 0px;--padding-inline-start: 20px;--padding-inline-end: 20px;}.elementor-1034 .elementor-element.elementor-element-e3e9fdf {--container-widget-width: 150px;--container-widget-flex-grow: 0;width: var(--container-widget-width, 150px);max-width: 150px;}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu>li>a {font-size: var(--e-global-typography-451c75e-font-size);line-height: var(--e-global-typography-451c75e-line-height);letter-spacing: var(--e-global-typography-451c75e-letter-spacing);word-spacing: var(--e-global-typography-451c75e-word-spacing);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu .sub-menu li a {font-size: var(--e-global-typography-451c75e-font-size);line-height: var(--e-global-typography-451c75e-line-height);letter-spacing: var(--e-global-typography-451c75e-letter-spacing);word-spacing: var(--e-global-typography-451c75e-word-spacing);}.elementor-1034 .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-nav-site-title .jkit-nav-logo img {max-width: 240px;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-hamburger-menu {display: block;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper {width: 100%;max-width: 360px;border-radius: 0;background-color: #f7f7f7;width: 100%;position: fixed;top: 0;left: -110%;height: 100% !important;box-shadow: 0 10px 30px 0 rgba(255, 165, 0, 0);overflow-y: auto;overflow-x: hidden;padding-top: 0;padding-left: 0;padding-right: 0;display: flex;flex-direction: column-reverse;justify-content: flex-end;-moz-transition: left 0.6s cubic-bezier(0.6, 0.1, 0.68, 0.53), width 0.6s;-webkit-transition: left 0.6s cubic-bezier(0.6, 0.1, 0.68, 0.53), width 0.6s;-o-transition: left 0.6s cubic-bezier(0.6, 0.1, 0.68, 0.53), width 0.6s;-ms-transition: left 0.6s cubic-bezier(0.6, 0.1, 0.68, 0.53), width 0.6s;transition: left 0.6s cubic-bezier(0.6, 0.1, 0.68, 0.53), width 0.6s;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper.active {left: 0;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu-container {overflow-y: hidden;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel {padding: 10px 0px 10px 0px;display: block;position: relative;z-index: 5;width: 100%;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-nav-site-title {display: inline-block;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-nav-identity-panel .jkit-close-menu {display: block;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu {display: block;height: 100%;overflow-y: auto;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children>a i {margin-left: auto;border: 1px solid var(--jkit-border-color);border-radius: 3px;padding: 4px 15px;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children>a svg {margin-left: auto;border: 1px solid var(--jkit-border-color);border-radius: 3px;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li.menu-item-has-children .sub-menu {position: inherit;box-shadow: none;background: none;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li {display: block;width: 100%;position: inherit;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li .sub-menu {display: none;max-height: 2500px;opacity: 0;visibility: hidden;transition: max-height 5s ease-out;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li .sub-menu.dropdown-open {display: block;opacity: 1;visibility: visible;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li a {display: block;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li a i {float: right;}}@media (max-width: 1024px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu li a svg {float: right;}}@media (min-width: 1025px) {.elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper .jkit-menu-container {height: 100%;}}@media (max-width: 1024px) {.admin-bar .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper {top: 32px;}}@media (max-width: 782px) {.admin-bar .elementor-element.elementor-element-c0daf6b .jeg-elementor-kit.jkit-nav-menu .jkit-menu-wrapper {top: 46px;}}</style>
+            <div data-elementor-type="page" data-elementor-id="1034" class="elementor elementor-1034">
+                <div class="elementor-element elementor-element-e47d0f0 e-con-full e-flex e-con e-parent"
+                    data-id="e47d0f0" data-element_type="container" data-settings='{"content_width":"full"}'
+                    data-core-v316-plus="true">
+                    <div class="elementor-element elementor-element-7d6659f e-flex e-con-boxed e-con e-child"
+                        data-id="7d6659f" data-element_type="container" data-settings='{"content_width":"boxed"}'>
+                        <div class="e-con-inner">
+                            <div class="elementor-element elementor-element-e3e9fdf elementor-widget__width-initial elementor-widget elementor-widget-image"
+                                data-id="e3e9fdf" data-element_type="widget" data-widget_type="image.default">
+                                <div class="elementor-widget-container">
+                                    <style> .elementor-widget-image {text-align: center;}.elementor-widget-image a {display: inline-block;}.elementor-widget-image a img[src$=".svg"] {width: 48px;}.elementor-widget-image img {vertical-align: middle;display: inline-block;}</style>
+                                    <a href="/">
+                                        <img width="800" height="139"
+                                            src="../../static/assets/images/logo/logo-dark.png"
+                                            class="attachment-large size-large wp-image-797" alt decoding="async"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-c0daf6b elementor-widget__width-auto elementor-widget elementor-widget-jkit_nav_menu"
+                                data-id="c0daf6b" data-element_type="widget" data-widget_type="jkit_nav_menu.default">
+                                <div class="elementor-widget-container">
+                                    <div class="jeg-elementor-kit jkit-nav-menu break-point-tablet submenu-click-title jeg_module_6__65596ee267223"
+                                        data-item-indicator='&lt;i aria-hidden="true" class="jki jki-angle-down-solid"&gt;&lt;/i&gt;'>
+                                        <button class="jkit-hamburger-menu">
+                                            <i aria-hidden="true" class="jki jki-menu-7-light"></i>
+                                        </button>
+                                        <div class="jkit-menu-wrapper">
+                                            <div class="jkit-menu-container">
+                                                <ul id="menu-menu"
+                                                    class="jkit-menu jkit-menu-direction-flex jkit-submenu-position-top">
+                                                    <li id="menu-item-16"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item menu-item-16">
+                                                        <a href="/" aria-current="page">Home</a>
+                                                    </li>
+                                                    <li id="menu-item-1435"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1435">
+                                                        <a href="/klasifikasi" aria-current="page">Klasifikasi</a>
+                                                    </li>
+                                                    <li id="menu-item-1435"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1435">
+                                                        <a href="/klasifikasirgb" aria-current="page">RGB</a>
+                                                    </li>
+                                                    <li id="menu-item-1439"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1435">
+                                                        <a href="/blog">Artikel</a>
+                                                    </li>
+                                                    <li id="menu-item-1443"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1443">
+                                                        <a href="/contact">Kontak</a>
+                                                    </li>                            
+                                                </ul>
+                                            </div>
+                                            <div class="jkit-nav-identity-panel">
+                                                <div class="jkit-nav-site-title">
+                                                    <a href="/" class="jkit-nav-logo"><img
+                                                            src="../../static/assets/images/logo/logo-light.png" /></a>
+                                                </div>
+                                                <button class="jkit-close-menu">
+                                                    <i aria-hidden="true" class="jki jki-times-solid"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="jkit-overlay"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div data-elementor-type="wp-page" data-elementor-id="6" class="elementor elementor-6">
+            <div class="elementor-element elementor-element-72ec55a e-flex e-con-boxed e-con e-parent" data-id="72ec55a"
+                data-element_type="container" data-settings='{"content_width":"boxed"}' data-core-v316-plus="true">
+                <div class="e-con-inner">
+                    <div class="elementor-element elementor-element-11460e6 e-flex e-con-boxed e-con e-child"
+                        data-id="11460e6" data-element_type="container"
+                        data-settings='{"background_background":"classic","content_width":"boxed"}'>
+                        <div class="e-con-inner">
+                            <div class="elementor-element elementor-element-25b630c e-con-full e-flex e-con e-child"
+                                data-id="25b630c" data-element_type="container"
+                                data-settings='{"content_width":"full","background_background":"gradient"}'>
+                                <div class="elementor-element elementor-element-fc43c19 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-jkit_heading"
+                                    data-id="fc43c19" data-element_type="widget"
+                                    data-widget_type="jkit_heading.default">
+                                    <div class="elementor-widget-container">
+                                        <div
+                                            class="jeg-elementor-kit jkit-heading align-left align-tablet- align-mobile- jeg_module_6_1_65596ee270711">
+                                            <div class="heading-section-title display-inline-block">
+                                                <h1 class="heading-title">
+                                                    Selamat datang di website kami!
+                                                    <span class="style-color"><span>SIKAPADI</span></span>
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-f277dc5 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
+                                    data-id="f277dc5" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <style> .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {background-color: #69727d;color: #fff;}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {color: #69727d;border: 3px solid;background-color: transparent;}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {margin-top: 8px;}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {width: 1em;height: 1em;}.elementor-widget-text-editor .elementor-drop-cap {float: left;text-align: center;line-height: 1;font-size: 50px;}.elementor-widget-text-editor .elementor-drop-cap-letter {display: inline-block;}</style>
+                                        Untuk mendeteksi dan mendiagnosis penyakit pada daun
+                                        tanaman padi. Studi kasus kami berfokus pada Kabupaten
+                                        Tuban, yang terkenal dengan produksi padi yang tinggi di
+                                        Jawa Timur.
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-e2edfdd elementor-widget__width-auto e-transform jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
+                                    data-id="e2edfdd" data-element_type="widget"
+                                    data-settings='{"_transform_translateX_effect_hover":{"unit":"px","size":10,"sizes":[]},"_transform_translateX_effect_hover_tablet":{"unit":"px","size":"","sizes":[]},"_transform_translateX_effect_hover_mobile":{"unit":"px","size":"","sizes":[]},"_transform_translateY_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_translateY_effect_hover_tablet":{"unit":"px","size":"","sizes":[]},"_transform_translateY_effect_hover_mobile":{"unit":"px","size":"","sizes":[]}}'
+                                    data-widget_type="jkit_icon_box.default">
+                                    <div class="elementor-widget-container">
+                                        <div
+                                            class="jeg-elementor-kit jkit-icon-box icon-position-right elementor-animation- jeg_module_6_2_65596ee274076">
+                                            <div class="jkit-icon-box-wrapper hover-from-left">
+                                                <div class="icon-box icon-box-header elementor-animation-">
+                                                    <div class="icon style-color">
+                                                        <i aria-hidden="true" class="jki jki-arrow-right-line"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="icon-box icon-box-body">
+                                                    <div class="icon-box-button">
+                                                        <div class="btn-wrapper icon-position-before">
+                                                            <a href="/klasifikasi" class="icon-box-link">Klasifikasi</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-93a2412 e-con-full e-flex e-con e-child"
+                                data-id="93a2412" data-element_type="container"
+                                data-settings='{"content_width":"full"}'>
+                                <div class="elementor-element elementor-element-1e63940 elementor-widget__width-auto e-transform elementor-widget elementor-widget-jkit_video_button"
+                                    data-id="1e63940" data-element_type="widget"
+                                    data-settings='{"_transform_scale_effect_hover":{"unit":"px","size":1.1,"sizes":[]},"_transform_scale_effect_hover_tablet":{"unit":"px","size":"","sizes":[]},"_transform_scale_effect_hover_mobile":{"unit":"px","size":"","sizes":[]}}'
+                                    data-widget_type="jkit_video_button.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="jeg-elementor-kit jkit-video-button jeg_module_6_4_65596ee27b31e">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-3acf956 elementor-shape-circle e-grid-align-right elementor-widget__width-auto e-grid-align-mobile-center elementor-grid-0 elementor-widget elementor-widget-social-icons"
+                                    data-id="3acf956" data-element_type="widget"
+                                    data-widget_type="social-icons.default">
+                                    <div class="elementor-widget-container">
+                                        <style> .elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container, .elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container, .elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container {line-height: 1;font-size: 0;}.elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid {display: inline-grid;}.elementor-widget-social-icons .elementor-grid {grid-column-gap: var(--grid-column-gap, 5px);grid-row-gap: var(--grid-row-gap, 5px);grid-template-columns: var(--grid-template-columns);justify-content: var(--justify-content, center);justify-items: var(--justify-content, center);}.elementor-icon.elementor-social-icon {font-size: var(--icon-size, 25px);line-height: var(--icon-size, 25px);width: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, 0.5em)));height: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, 0.5em)));}.elementor-social-icon {--e-social-icon-icon-color: #fff;display: inline-flex;background-color: #69727d;align-items: center;justify-content: center;text-align: center;cursor: pointer;}.elementor-social-icon i {color: var(--e-social-icon-icon-color);}.elementor-social-icon svg {fill: var(--e-social-icon-icon-color);}.elementor-social-icon:last-child {margin: 0;}.elementor-social-icon:hover {opacity: 0.9;color: #fff;}.elementor-social-icon-android {background-color: #a4c639;}.elementor-social-icon-apple {background-color: #999;}.elementor-social-icon-behance {background-color: #1769ff;}.elementor-social-icon-bitbucket {background-color: #205081;}.elementor-social-icon-codepen {background-color: #000;}.elementor-social-icon-delicious {background-color: #39f;}.elementor-social-icon-deviantart {background-color: #05cc47;}.elementor-social-icon-digg {background-color: #005be2;}.elementor-social-icon-dribbble {background-color: #ea4c89;}.elementor-social-icon-elementor {background-color: #d30c5c;}.elementor-social-icon-envelope {background-color: #ea4335;}.elementor-social-icon-facebook, .elementor-social-icon-facebook-f {background-color: #3b5998;}.elementor-social-icon-flickr {background-color: #0063dc;}.elementor-social-icon-foursquare {background-color: #2d5be3;}.elementor-social-icon-free-code-camp, .elementor-social-icon-freecodecamp {background-color: #006400;}.elementor-social-icon-github {background-color: #333;}.elementor-social-icon-gitlab {background-color: #e24329;}.elementor-social-icon-globe {background-color: #69727d;}.elementor-social-icon-google-plus, .elementor-social-icon-google-plus-g {background-color: #dd4b39;}.elementor-social-icon-houzz {background-color: #7ac142;}.elementor-social-icon-instagram {background-color: #262626;}.elementor-social-icon-jsfiddle {background-color: #487aa2;}.elementor-social-icon-link {background-color: #818a91;}.elementor-social-icon-linkedin, .elementor-social-icon-linkedin-in {background-color: #0077b5;}.elementor-social-icon-medium {background-color: #00ab6b;}.elementor-social-icon-meetup {background-color: #ec1c40;}.elementor-social-icon-mixcloud {background-color: #273a4b;}.elementor-social-icon-odnoklassniki {background-color: #f4731c;}.elementor-social-icon-pinterest {background-color: #bd081c;}.elementor-social-icon-product-hunt {background-color: #da552f;}.elementor-social-icon-reddit {background-color: #ff4500;}.elementor-social-icon-rss {background-color: #f26522;}.elementor-social-icon-shopping-cart {background-color: #4caf50;}.elementor-social-icon-skype {background-color: #00aff0;}.elementor-social-icon-slideshare {background-color: #0077b5;}.elementor-social-icon-snapchat {background-color: #fffc00;}.elementor-social-icon-soundcloud {background-color: #f80;}.elementor-social-icon-spotify {background-color: #2ebd59;}.elementor-social-icon-stack-overflow {background-color: #fe7a15;}.elementor-social-icon-steam {background-color: #00adee;}.elementor-social-icon-stumbleupon {background-color: #eb4924;}.elementor-social-icon-telegram {background-color: #2ca5e0;}.elementor-social-icon-thumb-tack {background-color: #1aa1d8;}.elementor-social-icon-tripadvisor {background-color: #589442;}.elementor-social-icon-tumblr {background-color: #35465c;}.elementor-social-icon-twitch {background-color: #6441a5;}.elementor-social-icon-twitter {background-color: #1da1f2;}.elementor-social-icon-viber {background-color: #665cac;}.elementor-social-icon-vimeo {background-color: #1ab7ea;}.elementor-social-icon-vk {background-color: #45668e;}.elementor-social-icon-weibo {background-color: #dd2430;}.elementor-social-icon-weixin {background-color: #31a918;}.elementor-social-icon-whatsapp {background-color: #25d366;}.elementor-social-icon-wordpress {background-color: #21759b;}.elementor-social-icon-xing {background-color: #026466;}.elementor-social-icon-yelp {background-color: #af0606;}.elementor-social-icon-youtube {background-color: #cd201f;}.elementor-social-icon-500px {background-color: #0099e5;}.elementor-shape-rounded .elementor-icon.elementor-social-icon {border-radius: 10%;}.elementor-shape-circle .elementor-icon.elementor-social-icon {border-radius: 50%;}</style>
+                                        <div class="elementor-social-icons-wrapper elementor-grid">
+                                            <span class="elementor-grid-item">
+                                                <a href="https://wa.me/62895627552055"
+                                                    class="elementor-icon elementor-social-icon elementor-social-icon-jki-facebook-light elementor-repeater-item-0ebf234"
+                                                    target="_blank">
+                                                    <span class="elementor-screen-only">Whatsapp</span>
+                                                    <i>
+                                                        <img src="static/assets/images/icons/whatsapp.png" alt="whatsapp Icon">
+                                                    </i>
+                                                </a>
+                                            </span>
+                                            <span class="elementor-grid-item">
+                                                <a href="https://t.me/SIKAPADI"
+                                                    class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-9195ad6"
+                                                    target="_blank">
+                                                    <span class="elementor-screen-only">Telegram</span>
+                                                    <i>
+                                                        <img src="static/assets/images/icons/telegram.png" alt="TelegramIcon">
+                                                    </i>
+                                                </a>
+                                            </span>
+                                            <span class="elementor-grid-item">
+                                                <a href="https://www.linkedin.com/in/maulanafiqrinurulfawaid"
+                                                    class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-b4b4d85"
+                                                    target="_blank">
+                                                    <span class="elementor-screen-only">LinkedIn</span>
+                                                    <i>
+                                                        <img src="static/assets/images/icons/linkedin.png" alt="LinkedIn Icon">
+                                                    </i>
+                                                </a>
+                                            </span>
+                                            <span class="elementor-grid-item">
+                                                <a href="https://www.instagram.com/maulanafiqri87?igsh=NXB6ODdhemxkc3h5"
+                                                    class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-18c42cb"
+                                                    target="_blank">
+                                                    <span class="elementor-screen-only">Instagram</span>
+                                                    <i><img src="static/assets/images/icons/instagram.png"
+                                                            alt="telephone Icon"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="elementor-element elementor-element-935e247 e-flex e-con-boxed e-con e-parent" data-id="935e247"
+                data-element_type="container" data-settings='{"content_width":"boxed"}' data-core-v316-plus="true">
+            </div>
+            {% include 'index/cta.html' %}
+            {% include 'index/artikel.html' %}
+            {% include 'index/faq.html' %}            
+        </div>
+        {% include 'main/footer.html' %}  
+    </div>
+    {% include 'index/script.html' %}  
+</body>
+
+</html>

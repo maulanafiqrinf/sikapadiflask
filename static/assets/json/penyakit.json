@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "Menghadapi Tantangan Penyakit Tungro pada Tanaman Padi",
+      "category": "insight",
+      "tags": ["agriculture"],
+      "date": "5 Desember 2023",
+      "image": "https://firebasestorage.googleapis.com/v0/b/sikapadi-43215.appspot.com/o/Blog%2Ftungro%2Ftungro-1.jpg?alt=media&token=1103fca6-7ed2-4c52-b718-7b614af81091",
+      "link": "assets/blogpadi/blog7.html"
+    },
+    {
+      "id": 2,
+      "title": "Melawan Ancaman Belalang Pemakan Daun pada Tanaman Padi",
+      "category": "tips-trick",
+      "tags": ["hydroponic"],
+      "date": "5 Desember 2023",
+      "image": "https://firebasestorage.googleapis.com/v0/b/sikapadi-43215.appspot.com/o/Blog%2Fbelalang%2Fbelalang1.jpg?alt=media&token=2f4bc304-2be7-46ee-a93c-7ef976f11a7e",
+      "link": "assets/blogpadi/blog8.html"
+    }
+]
+  
